@@ -9,13 +9,31 @@
 ### Webpage Breakdown: 
 ### Home Page: Menu that will show links that will lead to the other webpages.
 ### W1 (Olympians): This webpage will talk about the twelve Olympians of Greek mythology. The webpage will also include a brief description and history of each Olympian.
-### W2 (Famous Heroes): This webpage will talk about some of the many famous heroes in Greek mythology. Each hero will have his/her own brief description and history on how he/she came to be well-known.
+### W2 (Famous Heroes): This webpage will talk about some of the many known heroes and monsters in Greek mythology. Each hero or monster will have his/her own brief description and history on how he/she came to be well-known.
 ### W3 (Interactive Map of Greece): This webpage will involve an interactive map using JavaScript, designed to show the user a description of the important events and landmarks that are present in the area of the map that the user clicks on.
 ### W4 (Gallery): This webpage will showcase different artworks dedicated to the Greeks, while referencing Greek mythology. The general interpretation of the artworks will also be displayed with the art itself.
 ### W5 (Text RPG): This webpage is a game developed by our group involving the use of JavaScript. The game involves the user making decisions based on scenarios taken from Greek mythology. The user will also encounter different characters, mentioned in our other webpages, who will either guide the user or test the survival skills of the user.
 ### W6 (Sources): This part of our website contains links, references, and other websites used for the creation of this website.
 ******
 #### Other notes: 
-#### When the user scrolls beyond a certain pixel, the navigation bar will expand, involving JavaScript.
+#### <--Notes-->
 ******
-### Wireframes: 
+### Wireframes:
+#### Home Page: 
+#### ![Home Page](images/Home.png) 
+#### Olympians: 
+#### ![Olympians](images/Gods.png)
+#### Heroes/Monsters:
+#### ![Heroes/Monsters](images/HeroesMonsters.png)
+#### Map:
+#### ![Map](images/Map.png)
+#### Gallery:
+#### ![Gallery](images/Gallery.png)
+#### Gallery (Expanded): 
+#### ![Expanded_Gallery](images/Gallery2.png)
+#### Game: 
+#### ![StartGame](images/Game.png)
+#### Game (Expanded):
+#### ![Expanded_Game](images/Game2.png)
+#### Sources: 
+#### ![Sources](images/Sources.png)
