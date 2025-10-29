@@ -12,6 +12,10 @@
 ### W1 (Olympians): This webpage will talk about the twelve Olympians of Greek mythology. The webpage will also include a brief description and history of each Olympian.
 ### W2 (Famous Heroes): This webpage will talk about some of the many famous heroes in Greek mythology. Each hero will have his/her own brief description and history on how he/she came to be well-known.
 ### W3 (Interactive Map of Greece): This webpage will involve an interactive map using JavaScript, designed to show the user a description of the important events and landmarks that are present in the area of the map that the user clicks on.
-### W4 (Gallery): 
-### W5 (Text RPG): 
-### W6 (Sources):
+### W4 (Text RPG): This webpage is a game developed by our group involving the use of JavaScript. The game involves the user making decisions based on scenarios taken from Greek mythology. The user will also encounter different characters, mentioned in our other webpages, who will either guide the user or test the survival skills of the user.
+### W5 (Sources): This part of our website contains links, references, and other websites used for the creation of this website.
+******
+#### Other notes: 
+#### <--Notes/comments about the webpages-->
+******
+### Wireframes: 
