@@ -15,8 +15,8 @@
 ### W5 (Text RPG): This webpage is a game developed by our group involving the use of JavaScript. The game involves the user making decisions based on scenarios taken from Greek mythology. The user will also encounter different characters, mentioned in our other webpages, who will either guide the user or test the survival skills of the user.
 ### W6 (Sources): This part of our website contains links, references, and other websites used for the creation of this website.
 ******
-#### Other notes: 
-#### <--Notes-->
+#### JavaScript Incorporation: We will use JavaScript in the Map and Game webpage of our website. For the Map webpage, the user will have to press a location on the Map of Greece specified by a marker. JavaScript will take that input and release an output on the description part of the page. It works similar to an array. 
+#### For the Game webpage, the user will have to select between options which can either benefit or downgrade the user's character. Basically, the JavaScript to be used here is of selection structures, where if the user selects an option, it will lead the user to a different branch of if else conditions.
 ******
 ### Wireframes:
 #### Home Page: 
