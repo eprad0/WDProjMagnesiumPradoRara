@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Consolas, monospace;
     width: auto;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 body #menu {
@@ -18,7 +18,7 @@ body #menu {
      width: 100%;
      height: 100%;
      z-index: -2;
-     background: radial-gradient(circle at 15% 85%, rgba(204, 202, 96, 0.7) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(127, 134, 27, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgba(29, 140, 136, 0.6) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(34, 139, 34, 0.4) 0%, transparent 50%), linear-gradient(135deg, #0a0a0a 0%, #2d1b3d 50%, #000000 100%);
+     background: radial-gradient(circle at 15% 85%, rgba(204, 202, 96, 0.7) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(127, 134, 27, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(16, 211, 233) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(34, 139, 34, 0.829) 0%, transparent 50%), linear-gradient(135deg, #914343 0%, #53267a 50%, #682323 100%);
      animation: backgroundPulse 14s ease-in-out infinite;
 }
  @keyframes backgroundPulse {
@@ -33,22 +33,38 @@ body #menu {
     }
 }
 nav.topnav {
-    background-color: #8B6A43;
-    padding: 15px 0;
-    margin: 0px;
-    width: 100%;
     font-family: Consolas, monospace;
+    display: right;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    justify-content: space-between;
+    display: flex;
+    border-radius: 15px;
+    background: rgba(252, 113, 0, 0.747);
+    backdrop-filter: blur(90px);
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 85%;
+    max-width: 1200px;
+    padding: 18px 35px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 nav.topnav a img.logo {
-    display: block;
+    display: flex;
 	float: left;
 	height: 60px;
 	margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 	padding: 0;
-	width: 120px;
+	width: 110px;
 }
+
+nav.topnav a img.logo:hover {
+    transform: scale(1.05);
+} 
 nav.topnav ul#navigation {
     list-style: none;
     margin-right: 20px;
@@ -66,15 +82,26 @@ nav.topnav ul#navigation li a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
+    float: right;
+    padding: 0px 15px;
 }
 
-nav.topnav ul#navigation li a:hover {
+nav.topnav ul#navigation li:hover {
     opacity: 0.8;
+    transform: scale(1.05);
+    border-color: rgba(196, 109, 29, 0.829);
 }
 
-body nav#menu {
-    background: url(assets/homeimgs/homepagewallpaper.jpg) no-repeat center center fixed;
+nav#menu h1 {
+    margin-top: 150px;
+    text-shadow: #914343;
+    font-size: 100px;
+    background: linear-gradient(to right, #0d31d4, #9312bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 4px 6px rgba(9, 202, 193, 0.733));
 }
+
 nav #menu h3 {
     font-size: 48px;
     margin-bottom: 10px;
@@ -88,8 +115,13 @@ footer {
     backdrop-filter: blur(20px);
 }
 
-footer h3 {
+footer h1 {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 14px;
 }
