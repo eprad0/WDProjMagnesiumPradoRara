@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, monospace;
+    width: auto;
+    overflow: hidden;
+}
+
+body #menu {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+nav.topnav {
+    background-color: #8B6A43;
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+    font-family: Consolas, monospace;
+}
+
+nav.topnav ul {
+    list-style: none;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 60px;
+}
+
+nav.topnav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav.topnav ul li a:hover {
+    opacity: 0.8;
+}
+
+nav #menu {
+    background: url(../WDProjMagnesiumPradoRara/images/homepagewallpaper.jpg) no-repeat center center fixed;
+}
+nav #menu h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #4B3621;
+}
+footer p {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #8B6A43;
+    color: white;
+    font-family: Consolas, monospace;
+    margin: 0;
+}
