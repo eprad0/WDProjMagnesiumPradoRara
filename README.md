@@ -2,7 +2,7 @@
 ## A Thorough Review on Greek Mythology
 ******
 #### Logo: 
-#### ![Pallas_Logo](images/Pallas_Logo.png)
+#### ![Pallas_Logo](assets/wireframeimgs/Pallas_Logo.png)
 ### Description
 ### Our webpage aims to rekindle the readers’ interests in the legends of Greek mythology. Our content involves backstories and interesting details about the Greeks and the gods that they believe in. Included in the website are maps and games that allow users to learn about the Greek civilization and their beliefs better. Our group believes that the culture of the ancient Greek civilization is still prominent even during the Contemporary period. 
 ******
@@ -20,20 +20,20 @@
 ******
 ### Wireframes:
 #### Home Page: 
-#### ![Home Page](images/Home.png) 
+#### ![Home Page](assets/wireframeimgs/Home.png) 
 #### Olympians: 
-#### ![Olympians](images/Gods.png)
+#### ![Olympians](assets/wireframeimgs/Gods.png)
 #### Heroes/Monsters:
-#### ![Heroes/Monsters](images/HeroesMonsters.png)
+#### ![Heroes/Monsters](assets/wireframeimgs/HeroesMonsters.png)
 #### Map:
-#### ![Map](images/Map.png)
+#### ![Map](assets/wireframeimgs/Map.png)
 #### Gallery:
-#### ![Gallery](images/Gallery.png)
+#### ![Gallery](assets/wireframeimgs/Gallery.png)
 #### Gallery (Expanded): 
-#### ![Expanded_Gallery](images/Gallery2.png)
+#### ![Expanded_Gallery](assets/wireframeimgs/Gallery2.png)
 #### Game: 
-#### ![StartGame](images/Game.png)
+#### ![StartGame](assets/wireframeimgs/Game.png)
 #### Game (Expanded):
-#### ![Expanded_Game](images/Game2.png)
+#### ![Expanded_Game](assets/wireframeimgs/Game2.png)
 #### Sources: 
-#### ![Sources](images/Sources.png)
+#### ![Sources](assets/wireframeimgs/Sources.png)
