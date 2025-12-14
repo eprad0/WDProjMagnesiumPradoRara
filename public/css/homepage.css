@@ -6,7 +6,7 @@ body {
     overflow: scroll;
 }
 
-body #menu {
+body #description {
     margin-top: 20px;
     text-align: center;
     
@@ -18,7 +18,7 @@ body #menu {
      width: 100%;
      height: 100%;
      z-index: -2;
-     background: radial-gradient(circle at 15% 85%, rgba(204, 202, 96, 0.7) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(127, 134, 27, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(16, 211, 233) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(34, 139, 34, 0.829) 0%, transparent 50%), linear-gradient(135deg, #914343 0%, #53267a 50%, #682323 100%);
+     background: radial-gradient(circle at 15% 85%, rgba(226, 153, 93, 0.904) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(193, 216, 110, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(197, 94, 129) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(78, 172, 226, 0.829) 0%, transparent 50%), linear-gradient(135deg, #e46767 0%, #c68ef7 50%, #d65e5e 100%);
      animation: backgroundPulse 14s ease-in-out infinite;
 }
  @keyframes backgroundPulse {
@@ -39,7 +39,7 @@ nav.topnav {
     justify-content: space-between;
     display: flex;
     border-radius: 15px;
-    background: rgba(252, 113, 0, 0.747);
+    background: linear-gradient(to right, rgb(226, 125, 9), rgba(226, 186, 55, 0.5));
     backdrop-filter: blur(90px);
     position: fixed;
     top: 15px;
@@ -92,33 +92,101 @@ nav.topnav ul#navigation li:hover {
     border-color: rgba(196, 109, 29, 0.829);
 }
 
-nav#menu h1 {
+nav#description h1 {
     margin-top: 150px;
     text-shadow: #914343;
     font-size: 100px;
-    background: linear-gradient(to right, #0d31d4, #9312bb);
+    background: linear-gradient(to right, #d40dc3, #bb1228);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(2px 4px 6px rgba(9, 202, 193, 0.733));
+    display: inline-block;
 }
 
-nav #menu h3 {
-    font-size: 48px;
+nav#description h2 {
+    font-size: 25px;
     margin-bottom: 10px;
-    color: #4B3621;
+    color: #802121;
+    margin-top: 2px;
 }
+
+nav#description p {
+    font-size: 1rem;
+    color: #493b3b;
+    line-height: 1.7;
+    margin-bottom: 0;
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+}
+
+nav#travel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    margin: 60px auto 50px;
+    max-width: 640px;
+    opacity: 0;
+    animation: slideUpStagger 1.2s ease 1.2s forwards;
+}
+
+.travelsite {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(224, 163, 255, 0.06), rgba(255, 105, 180, 0.04));
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+ .travelsite:hover {
+     transform: translateY(-8px) scale(1.05);
+     border-color: rgba(255, 105, 180, 0.3);
+     box-shadow: 0 20px 40px rgba(224, 163, 255, 0.1);
+}
+ .travelsites-sitename {
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: #e0a3ff;
+     display: block;
+     text-shadow: 0 0 15px rgba(224, 163, 255, 0.4);
+     margin-bottom: 8px;
+}
+ .travelsite-siteinfo {
+     font-size: 0.8rem;
+     color: #999;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     font-weight: 400;
+}
+
+ @keyframes slideUpStagger {
+     from {
+         opacity: 0;
+         transform: translateY(30px);
+    }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+    }
+}
+
 footer {
     text-align: center;
-     padding: 60px 20px 40px;
-     border-top: 1px solid rgba(201, 90, 22, 0.2);
-     background: rgba(74, 24, 24, 0.5);
+    margin-top: 40px;
+    padding: 60px 20px 40px;
+    border-top: 1px solid rgba(201, 90, 22, 0.2);
+    background: rgba(74, 24, 24, 0.5);
     backdrop-filter: blur(20px);
 }
 
 footer h1 {
     color: #FFFFFF;
+    margin-top: 20px;
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 footer p {
