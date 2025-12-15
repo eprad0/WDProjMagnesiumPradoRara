@@ -18,7 +18,7 @@ body #description {
      width: 100%;
      height: 100%;
      z-index: -2;
-     background: radial-gradient(circle at 15% 85%, rgba(226, 153, 93, 0.904) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(159, 214, 225, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(195, 152, 129) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(78, 172, 226, 0.829) 0%, transparent 50%), linear-gradient(135deg, #f2e79c 0%, #deeeeb 50%, #ee93a2 100%);
+     background: radial-gradient(circle at 15% 85%, rgba(226, 153, 93, 0.904) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(82, 131, 141, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(195, 152, 129) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(78, 172, 226, 0.829) 0%, transparent 50%), linear-gradient(135deg, #f2e79c 0%, #deeeeb 50%, #ee93a2 100%);
      animation: backgroundPulse 14s ease-in-out infinite;
 }
  @keyframes backgroundPulse {
@@ -34,7 +34,6 @@ body #description {
 }
 nav#topnav {
     font-family: Consolas, monospace;
-    display: block;
     box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     justify-content: space-between;
     display: flex;
@@ -50,7 +49,8 @@ nav#topnav {
     width: 85%;
     max-width: 1200px;
     padding: 18px 35px;
-    transition: top 0.8s;
+    transition: top 0.8s ease;
+    
 }
 
 nav#topnav a img.logo {
@@ -125,47 +125,21 @@ nav#description p {
 
 nav#button-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 40px;
     margin: 60px auto 50px;
     max-width: 700px;
-    opacity: 1;
+    opacity: 0;
     animation: slideUpStagger 1.2s ease 1.2s forwards;
 }
 
-.button {
-    text-align: center;
-    position: relative;
-    padding: 20px;
-    background: linear-gradient(135deg, rgba(224, 163, 255, 0.06), rgba(255, 105, 180, 0.04));
-    border: 1px solid rgba(224, 163, 255, 0.15);
-    border-radius: 12px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
+nav#button-grid nav.button1 {
+    cursor: pointer;
+    animation-delay: 0.2s;
+    translate: transformY(0);
 }
 
- .button:hover {
-     transform: translateY(-8px) scale(1.05);
-     border-color: rgba(255, 105, 180, 0.3);
-     box-shadow: 0 20px 40px rgba(224, 163, 255, 0.1);
-}
- .button-sitename {
-     font-size: 1.8rem;
-     font-weight: 700;
-     color: #e0a3ff;
-     display: block;
-     text-shadow: 0 0 15px rgba(224, 163, 255, 0.4);
-     margin-bottom: 8px;
-}
- .button-siteinfo {
-     font-size: 0.8rem;
-     color: #999;
-     text-transform: uppercase;
-     letter-spacing: 0.1em;
-     font-weight: 400;
-}
-
- @keyframes slideUpStagger {
+@keyframes slideUpStagger {
      from {
          opacity: 0;
          transform: translateY(30px);
@@ -174,6 +148,162 @@ nav#button-grid {
          opacity: 1;
          transform: translateY(0);
     }
+}
+
+.button1 {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(109, 47, 137, 0.916), rgba(134, 78, 198, 0.836));
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.button1:hover {
+    transform: translateY(-8px) scale(1.07);
+    box-shadow: 3px 12px 30px rgba(247, 255, 17, 0.9);
+}
+
+.button1 span.siteinfo {
+    font-size: 1.05rem;
+    color: #d1d1d1;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 600;
+    text-shadow: 1px 2px 15px rgba(236, 149, 203, 0.715);
+}
+
+.button2 {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(38, 117, 40, 0.916), rgba(239, 201, 77, 0.836));
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.button2:hover {
+    transform: translateY(-8px) scale(1.07);
+    box-shadow: 3px 12px 30px rgba(255, 47, 47, 0.9);
+}
+
+.button2 span.siteinfo {
+    font-size: 1.05rem;
+    color: #422368;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 600;
+    text-shadow: 1px 2px 15px rgba(236, 149, 203, 0.715);
+}
+
+.button3 {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(164, 91, 46, 0.916), rgba(239, 201, 77, 0.836));
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.button3:hover {
+    transform: translateY(-8px) scale(1.07);
+    box-shadow: 3px 12px 30px #a844fae6;
+}
+
+.button3 span.siteinfo {
+    font-size: 1.05rem;
+    color: #422368;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 600;
+    text-shadow: 1px 2px 15px rgba(236, 149, 203, 0.715);
+}
+
+.button4 {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(158, 166, 45, 0.916), rgba(239, 201, 77, 0.836));
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.button4:hover {
+    transform: translateY(-8px) scale(1.07);
+    box-shadow: 3px 12px 30px #f361e6e6;
+}
+
+.button4 span.siteinfo {
+    font-size: 1.05rem;
+    color: #422368;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 600;
+    text-shadow: 1px 2px 15px rgba(236, 149, 203, 0.715);
+}
+
+.button5 {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(101, 61, 246, 0.916), rgba(91, 156, 231, 0.836));
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.button5:hover {
+    transform: translateY(-8px) scale(1.07);
+    box-shadow: 3px 12px 50px #eb6c28;
+}
+
+.button5 span.siteinfo {
+    font-size: 1.05rem;
+    color: #f3eefa;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 600;
+    text-shadow: 1px 2px 15px rgba(236, 149, 203, 0.715);
+}
+
+.button6 {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(247, 55, 55, 0.916), rgba(240, 85, 110, 0.836));
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.button6:hover {
+    transform: translateY(-8px) scale(1.07);
+    box-shadow: 3px 12px 30px #42ff74f3;
+}
+
+.button6 span.siteinfo {
+    font-size: 1.05rem;
+    color: #d1c9da;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 600;
+    text-shadow: 1px 2px 15px rgba(236, 149, 203, 0.715);
 }
 
 footer {
@@ -185,6 +315,43 @@ footer {
     backdrop-filter: blur(20px);
 }
 
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+footer .footer-links a {
+    color: #f6e6e6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 8px 0;
+}
+
+footer .footer-links a:hover {
+    color: #fefc5c;
+    font-size: 1.3rem;
+    text-shadow: 0 0 10px rgba(182, 239, 91, 0.5);
+}
+
+footer .footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #2af3f7, #3460ef);
+    transition: width 0.3s ease;
+}
+
+footer .footer-links a:hover::after {
+    width: 100%;
+}   
 footer h1 {
     color: #FFFFFF;
     margin-top: 20px;
