@@ -6,15 +6,27 @@
     <title>Steps to Olympus </title>
     <link rel="stylesheet" href="../public/css/homepage.css">
     <link rel="icon" href="../assets/wireframeimgs/Pallas_Logo.png" type="image/png">
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("topnav").style.top = "5px";
+        } else {
+            document.getElementById("topnav").style.top = "-140px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
 </head>
 <body>
     <nav class="color-background"></nav>
-    <nav class="topnav">
+    <nav id="topnav">
         <a href="index.html"><img src="assets/wireframeimgs/Pallas_Logo_LightGray.png" alt="Image of Pallas Logo" class="logo"></a>
             <ul id="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="../public/webpages/w1_olympians.html">Olympians</a></li>
-                <li><a href="../public/webpages/w2_heroes.html">Famous Heroes</a></li>
+                <li><a href="../public/webpages/w2_heroes.html">Heroes and Monsters</a></li>
                 <li><a href="../public/webpages/w3_map.html">Interactive Map</a></li>
                 <li><a href="../public/webpages/w4_gallery.html">Gallery</a></li>
                 <li><a href="../public/webpages/w5_rpg.html">Text RPG</a></li>
@@ -28,16 +40,16 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget erat tincidunt purus suscipit fringilla eget id erat. Cras elit dui, pretium a aliquam eget, auctor a mauris. Nunc scelerisque, sapien sed luctus dignissim, lorem elit pretium nibh, ut pulvinar libero lorem vel urna. Donec id laoreet magna. Morbi accumsan, turpis eget lobortis semper, ipsum velit rhoncus ligula, eget placerat sem nulla id leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ultricies purus nec magna ultrices blandit. Curabitur lorem velit, consequat ut feugiat non, posuere sit amet dui. In pretium, tortor at pharetra venenatis, metus ipsum ornare urna, euismod ullamcorper orci ante ut mauris. Curabitur viverra lorem facilisis ullamcorper malesuada. Duis rhoncus interdum congue. Etiam lobortis neque nec ipsum cursus, ac sodales diam sagittis. Aenean a dui tellus.</p>
     </nav>
 
-    <nav id="travel">
-        <nav class="travelsite">
-            <a href="w1_olympians.html"><span class="sitename">Olympians</span></a>
+    <nav id="button-grid">
+        <a href="w1_olympians.html"><nav class="button">
+            <span class="sitename"><img src="../assets/homeimgs/godspic.png" style: height="140px"></span>
             <span class="siteinfo">A Resume of the Twelve Olympians</span>
-        </nav>
-        <nav class="travelsite">
-            <span class="sitename">Heroes</span>
+        </nav></a>
+        <nav class="button">
+            <span class="sitename">Heroes and Monsters</span>
             <span class="siteinfo">Legendary Heroes and their Tales</span>
         </nav>
-        <nav class="travelsite">
+        <nav class="button">
             <span class="sitename">Interactive Map</span>
             <span class="siteinfo">Explore Ancient Greece</span>
         </nav>

@@ -18,7 +18,7 @@ body #description {
      width: 100%;
      height: 100%;
      z-index: -2;
-     background: radial-gradient(circle at 15% 85%, rgba(226, 153, 93, 0.904) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(193, 216, 110, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(197, 94, 129) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(78, 172, 226, 0.829) 0%, transparent 50%), linear-gradient(135deg, #e46767 0%, #c68ef7 50%, #d65e5e 100%);
+     background: radial-gradient(circle at 15% 85%, rgba(226, 153, 93, 0.904) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(159, 214, 225, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(195, 152, 129) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(78, 172, 226, 0.829) 0%, transparent 50%), linear-gradient(135deg, #f2e79c 0%, #deeeeb 50%, #ee93a2 100%);
      animation: backgroundPulse 14s ease-in-out infinite;
 }
  @keyframes backgroundPulse {
@@ -32,40 +32,42 @@ body #description {
          filter: brightness(1.0) saturate(1.5) hue-rotate(-10deg);
     }
 }
-nav.topnav {
+nav#topnav {
     font-family: Consolas, monospace;
-    display: right;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    display: block;
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     justify-content: space-between;
     display: flex;
     border-radius: 15px;
     background: linear-gradient(to right, rgb(226, 125, 9), rgba(226, 186, 55, 0.5));
     backdrop-filter: blur(90px);
     position: fixed;
-    top: 15px;
+    top: 8px;
+    height: 15%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
     width: 85%;
     max-width: 1200px;
     padding: 18px 35px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: top 0.8s;
 }
 
-nav.topnav a img.logo {
+nav#topnav a img.logo {
     display: flex;
 	float: left;
 	height: 60px;
-	margin-top: 0px;
+	margin-top: 13px;
     margin-bottom: 4px;
+    margin-right: 4px;
 	padding: 0;
-	width: 110px;
+	width: 100px;
 }
 
-nav.topnav a img.logo:hover {
-    transform: scale(1.05);
+nav#topnav a img.logo:hover {
+    transform: scale(1.10);
 } 
-nav.topnav ul#navigation {
+nav#topnav ul#navigation {
     list-style: none;
     margin-right: 20px;
     padding: 0;
@@ -75,7 +77,7 @@ nav.topnav ul#navigation {
     gap: 60px;
 }
 
-nav.topnav ul#navigation li a {
+nav#topnav ul#navigation li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -83,10 +85,11 @@ nav.topnav ul#navigation li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     float: right;
-    padding: 0px 15px;
+    padding: 0px 13px;
+    
 }
 
-nav.topnav ul#navigation li:hover {
+nav#topnav ul#navigation li:hover {
     opacity: 0.8;
     transform: scale(1.05);
     border-color: rgba(196, 109, 29, 0.829);
@@ -96,10 +99,10 @@ nav#description h1 {
     margin-top: 150px;
     text-shadow: #914343;
     font-size: 100px;
-    background: linear-gradient(to right, #d40dc3, #bb1228);
+    background: linear-gradient(to right, #d2b557, #3fd0b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 4px 6px rgba(9, 202, 193, 0.733));
+    filter: drop-shadow(2px 4px 6px rgba(47, 83, 81, 0.733));
     display: inline-block;
 }
 
@@ -120,17 +123,17 @@ nav#description p {
     margin: 0 auto;
 }
 
-nav#travel {
+nav#button-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 40px;
     margin: 60px auto 50px;
-    max-width: 640px;
-    opacity: 0;
+    max-width: 700px;
+    opacity: 1;
     animation: slideUpStagger 1.2s ease 1.2s forwards;
 }
 
-.travelsite {
+.button {
     text-align: center;
     position: relative;
     padding: 20px;
@@ -141,12 +144,12 @@ nav#travel {
     backdrop-filter: blur(10px);
 }
 
- .travelsite:hover {
+ .button:hover {
      transform: translateY(-8px) scale(1.05);
      border-color: rgba(255, 105, 180, 0.3);
      box-shadow: 0 20px 40px rgba(224, 163, 255, 0.1);
 }
- .travelsites-sitename {
+ .button-sitename {
      font-size: 1.8rem;
      font-weight: 700;
      color: #e0a3ff;
@@ -154,7 +157,7 @@ nav#travel {
      text-shadow: 0 0 15px rgba(224, 163, 255, 0.4);
      margin-bottom: 8px;
 }
- .travelsite-siteinfo {
+ .button-siteinfo {
      font-size: 0.8rem;
      color: #999;
      text-transform: uppercase;
