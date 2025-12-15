@@ -9,8 +9,8 @@ body {
 body #description {
     margin-top: 20px;
     text-align: center;
-    
 }
+
 .color-background {
      position: fixed;
      top: 0;
@@ -32,6 +32,7 @@ body #description {
          filter: brightness(1.0) saturate(1.5) hue-rotate(-10deg);
     }
 }
+
 nav#topnav {
     font-family: Consolas, monospace;
     box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -50,7 +51,6 @@ nav#topnav {
     max-width: 1200px;
     padding: 18px 35px;
     transition: top 0.8s ease;
-    
 }
 
 nav#topnav a img.logo {
@@ -67,6 +67,7 @@ nav#topnav a img.logo {
 nav#topnav a img.logo:hover {
     transform: scale(1.10);
 } 
+
 nav#topnav ul#navigation {
     list-style: none;
     margin-right: 20px;
@@ -74,19 +75,18 @@ nav#topnav ul#navigation {
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
 }
 
 nav#topnav ul#navigation li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     float: right;
     padding: 0px 13px;
-    
 }
 
 nav#topnav ul#navigation li:hover {
@@ -104,6 +104,18 @@ nav#description h1 {
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(2px 4px 6px rgba(47, 83, 81, 0.733));
     display: inline-block;
+}
+
+nav#description h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 5px;
+    background: linear-gradient(90deg, #aeff00, #ff0080);
+    border-radius: 2px;
 }
 
 nav#description h2 {
