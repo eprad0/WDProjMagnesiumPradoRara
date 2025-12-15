@@ -136,44 +136,46 @@ nav#header-description p {
     margin: 0 auto;
 }
 
-nav#zeus-cards {
+nav#god-info {
     display: flex;
     align-items: center;
     gap: 80px;
     position: relative;
+    padding-bottom: 60px;
 }
 
-nav#zeus-cards .god-card {
+nav#god-info .god-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
     background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
     border-radius: 24px;
-    margin-left: 305px;
+    margin-left: 165px;
 }
 
-nav#zeus-cards:after {
+nav#god-info:after {
     content: '';
     position: absolute;
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1300px;
-    height: 10px;
+    width: 700px;
+    height: 7px;
     background: linear-gradient(90deg, #ec42b3, #ff0080);
     border-radius: 2px;
+    bottom: 40px;
 }
 
-nav#zeus-cards .god-card:hover {
+nav#god-info .god-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#zeus-cards .god-pic img {
+nav#god-info .god-pic img {
     flex: 1;
-    height: 60%;
-    width: 50%;
+    height: 50%;
+    width: 60%;
     position: relative;
     border-radius: 24px;
     overflow: none;
@@ -181,16 +183,16 @@ nav#zeus-cards .god-pic img {
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.4s ease;
-    margin-right: 0px;
+    margin-right: -200px;
 }
 
-nav#zeus-cards .god-pic img:hover {
+nav#god-info .god-pic img:hover {
     transform: scale(1.08);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease;
 }
 
- nav#zeus-cards .god-pic img::before {
+ nav#god-info .god-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -203,8 +205,12 @@ nav#zeus-cards .god-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#zeus-cards .god-pic img:hover::before {
+ nav#god-info .god-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+#card-container:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 footer {
