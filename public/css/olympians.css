@@ -6,7 +6,7 @@ body {
     overflow: scroll;
 }
 
-body #header-description {
+#description {
     margin-top: 20px;
     text-align: center;
 }
@@ -16,6 +16,7 @@ body #header-description {
      top: 0;
      left: 0;
      width: 100%;
+     min-height: 100vh;
      height: 100%;
      z-index: -2;
      background: radial-gradient(circle at 15% 85%, rgba(226, 153, 93, 0.904) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(82, 131, 141, 0.975) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(195, 152, 129) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(78, 172, 226, 0.829) 0%, transparent 50%), linear-gradient(135deg, #f2e79c 0%, #deeeeb 50%, #ee93a2 100%);
@@ -95,7 +96,7 @@ nav#topnav ul#navigation li:hover {
     border-color: rgba(196, 109, 29, 0.829);
 }
 
-nav#header-description h1 {
+nav#description h1 {
     margin-top: 150px;
     text-shadow: #914343;
     font-size: 60px;
@@ -106,7 +107,7 @@ nav#header-description h1 {
     display: inline-block;
 }
 
-nav#header-description h1::after {
+nav#description h1::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -118,7 +119,7 @@ nav#header-description h1::after {
     border-radius: 2px;
 }
 
-nav#header-description h2 {
+nav#description h2 {
     font-size: 25px;
     margin-bottom: 20px;
     color: #802121;
