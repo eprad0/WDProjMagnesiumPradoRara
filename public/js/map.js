@@ -33,7 +33,7 @@ const mythData = {
   }
 };
 
- function showInfo(place) {
+ function showInfo(place) { // place is the key in mythData
     const box = document.getElementById('info-box');
     const data = mythData[place];
     box.innerHTML = `<h2>${data.name}</h2><p>${data.myth}</p>`;

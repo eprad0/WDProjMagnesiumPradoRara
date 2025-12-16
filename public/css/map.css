@@ -126,6 +126,16 @@ nav#header-description h2 {
     margin-top: 2px;
 }
 
+nav#header-description p {
+    font-size: 1rem;
+    color: #493b3b;
+    line-height: 1.7;
+    margin-bottom: 0;
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+}
+
 .map-container {
     position: relative;
     display: inline-block;
