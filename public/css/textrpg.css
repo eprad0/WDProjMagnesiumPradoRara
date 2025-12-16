@@ -376,15 +376,15 @@ footer p {
     font-size: 14px;
 }
 
-/* RPG */
+/* RPG  NOT FINAL VER*/
 
 main#rpg-container {
     max-width: 1100px;
-    margin: 0 auto;              /* center horizontally */
-    margin-top: 160px;           /* space under the fixed navbar */
-    padding: 0 20px 80px;        /* side + bottom breathing room */
+    margin: 0 auto;              
+    margin-top: 160px;           
+    padding: 0 20px 80px;       
     display: flex;
-    justify-content: center;     /* center the card inside */
+    justify-content: center;    
     box-sizing: border-box;
 }
 
