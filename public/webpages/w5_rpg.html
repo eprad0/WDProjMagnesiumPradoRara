@@ -3,25 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pallas - Game Start</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="../images/Pallas_Logo.png" type="image/png">
+    <title>Steps to Olympus Text RPG</title>
+    <link rel="stylesheet" href="../css/textrpg.css">
+    <link rel="icon" href="../assets/wireframeimgs/Pallas_Logo.png" type="image/png">
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("topnav").style.top = "10px";
+            } else {
+                document.getElementById("topnav").style.top = "-135px";
+            }
+            prevScrollpos = currentScrollPos;
+        };
+    </script>
 </head>
 <body>
+    <nav class="color-background"></nav>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="w1_olympians.html">Olympians</a></li>
-            <li><a href="w2_heroes.html">Famous Heroes</a></li>
-            <li><a href="w3_map.html">Interactive Map</a></li>
-            <li><a href="w4_gallery.html">Gallery</a></li>
-            <li><a href="w5_rpg.html">Text RPG</a></li>
-            <li><a href="w6_sources.html">Sources</a></li>
+    <nav id="topnav">
+        <a href="index.html">
+            <a href="index.html"><img src="/assets/wireframeimgs/Pallas_Logo_LightGray.png" alt="Image of Pallas Logo" class="logo"></a>
+        </a>
+        <ul id="navigation">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../public/webpages/w1_olympians.html">Olympians</a></li>
+            <li><a href="../public/webpages/w2_heroes.html">Heroes/Monsters</a></li>
+            <li><a href="../public/webpages/w3_map.html">Map</a></li>
+            <li><a href="../public/webpages/w4_gallery.html">Gallery</a></li>
+            <li><a href="../public/webpages/w5_rpg.html">Start Game!</a></li>
         </ul>
     </nav>
 
+    <!-- RPG CARD -->
+    <main id="rpg-container">
+        <section id="rpg-card">
+            <header class="rpg-header">
+                <h1>The Adventure of <span id="playerNameDisplay">[Your Name]</span></h1>
+            </header>
 
+            
+            <section id="rpg-text">
+                <p id="storyText">
+                    A terrifying roar engulfs the land as the countryside is invaded by monsters of all kinds. These monsters have killed hundreds of people and endangered the lives of thousands more. They have been continuing for centuries, terrorizing the Peoloponnese. <br> <br>
+
+                    You, one of the greatest fighters and heroes in the land, are the only one who can defeat these creatures and bring peace to the known world. Thousands of people are counting on you to save their families, cities, and livelihoods. Will you take up this challenge?
+                    Click <strong>Start Battle!</strong> to begin.
+                </p>
+            </section>
+
+            <section id="rpg-controls">
+                <!-- Screen 1: Start button -->
+                <div id="start-screen">
+                    <p style="font-size: 1.1rem; margin-bottom: 10px; color:#3a2a16;">
+                        Name of the hero:
+                    </p>
+                    <input id="playerNameInput" type="text" placeholder="Your Name" style="padding: 12px; width: 100%; max-width: 350px; font-size: 1rem border-radius: 10px; border: 2px solid #9c825d; background: #fdf7ed; margin-bottom: 15px; font-family: Consolas, monospace;">
+                    <button id="startButton" class="rpg-btn wide">
+                        Start Game
+                    </button>
+                </div>
+
+                <!-- Screen 2: Choice buttons -->
+                <div id="choice-screen" class="hidden">
+                <!--hide before player gives name -->
+                    <div class="choice-row">
+                        <button class="rpg-btn choice-btn" data-choice="1">Grab the Cyclops</button>
+                        <button class="rpg-btn choice-btn" data-choice="3">Swing at him</button>
+                    </div>
+                    <div class="choice-row">
+                        <button class="rpg-btn choice-btn" data-choice="2">Devastating Smash</button>
+                        <button class="rpg-btn choice-btn" data-choice="4">Flurry of Kicks</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/eprad0/WDProjMagnesiumPradoRara.git" target="_blank">Github</a> 
+            <a href="mailto:b2029jhgrara@pshs.edu.ph" target="_blank">Hsien's Email</a> 
+            <a href="mailto:b2029ejbprado@pshs.edu.ph">Ed's Email</a> 
+        </div>
+        <h1>A Thorough Review on Greek Mythology</h1>
+        <p>© 2024 Jabez Rara and Eduardo Prado. All rights reserved.</p>
+    </footer>
+
+    <!-- RPG SCRIPT: TO BE MODIFIED IN THE FINAL VER. layout demo only-->
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+    const startBtn = document.getElementById("startButton");
+    const startScreen = document.getElementById("start-screen");
+    const choiceScreen = document.getElementById("choice-screen");
+    const storyText = document.getElementById("storyText");
+
+    const nameDisplay = document.getElementById("playerNameDisplay"); // shows name in title
+    const nameInput = document.getElementById("playerNameInput");     // input field
+
+    const choiceButtons = document.querySelectorAll(".choice-btn");
+
+
+    // start button
+    startBtn.addEventListener("click", function () {
+
+        const name = nameInput.value.trim();
+
+        if (name === "") {
+            alert("Please enter your name before starting.");
+            return;
+        }
+
+        nameDisplay.textContent = name;
+
+        storyText.textContent = "The Cyclops stands before you, tall and almighty. " + name + ", defeat him.";
+
+        startScreen.classList.add("hidden");
+        choiceScreen.classList.remove("hidden");
+    });
+
+
+    // ATTACK BUTTONS
+    choiceButtons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+
+            const damage = Math.floor(Math.random() * 100) + 1;
+
+            storyText.textContent =
+                "The Cyclops is hit by the attack. It takes " + damage + " damage.";
+        });
+    });
+
+});
+</script>
 
 </body>
 </html>
+
