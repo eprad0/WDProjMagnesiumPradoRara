@@ -126,16 +126,6 @@ nav#header-description h2 {
     margin-top: 2px;
 }
 
-nav#header-description p {
-    font-size: 1rem;
-    color: #493b3b;
-    line-height: 1.7;
-    margin-bottom: 0;
-    font-weight: 300;
-    width: 60%;
-    margin: 0 auto;
-}
-
 nav#god-info {
     display: flex;
     align-items: center;
@@ -143,39 +133,36 @@ nav#god-info {
     position: relative;
     padding-bottom: 60px;
 }
+/* Zeus Card*/
 
-nav#god-info .god-card {
+nav#god-info .zeus-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    background: linear-gradient(135deg, rgba(242, 252, 140, 0.868), rgba(197, 191, 75, 0.8));
     border-radius: 24px;
     margin-left: 165px;
+    height: 150px;
 }
 
-nav#god-info:after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 700px;
-    height: 7px;
-    background: linear-gradient(90deg, #ec42b3, #ff0080);
-    border-radius: 2px;
-    bottom: 40px;
+nav#god-info .zeus-card h1 {
+    margin-top: 0;
 }
 
-nav#god-info .god-card:hover {
+nav#god-info .zeus-card h2 {
+    margin-top: 0px;
+}
+
+nav#god-info .zeus-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .god-pic img {
+nav#god-info .zeus-pic img {
     flex: 1;
-    height: 50%;
-    width: 60%;
+    height: 55%;
+    width: 50%;
     position: relative;
     border-radius: 24px;
     overflow: none;
@@ -186,13 +173,13 @@ nav#god-info .god-pic img {
     margin-right: -200px;
 }
 
-nav#god-info .god-pic img:hover {
+nav#god-info .zeus-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 15px 20px 5px rgba(230, 232, 175, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .god-pic img::before {
+ nav#god-info .zeus-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -205,7 +192,805 @@ nav#god-info .god-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .god-pic img:hover::before {
+ nav#god-info .zeus-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Hera Card*/
+
+nav#god-info .hera-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(209, 157, 122, 0.8), rgba(120, 61, 45, 0.8));
+    border-radius: 24px;
+    margin-right: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .hera-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .hera-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .hera-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-left: 160px;
+}
+
+nav#god-info .hera-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hera-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hera-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Poseidon's Card*/
+
+nav#god-info .poseidon-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(188, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    border-radius: 24px;
+    margin-left: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .poseidon-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .poseidon-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .poseidon-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-right: 160px;
+}
+
+nav#god-info .poseidon-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(72, 65, 122, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .poseidon-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .poseidon-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(151, 125, 255, 0.598), rgba(255, 105, 180, 0.2));
+}
+
+/* Aphrodite Card*/
+
+nav#god-info .aphrodite-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(252, 176, 210, 0.8), rgba(221, 125, 143, 0.8));
+    border-radius: 24px;
+    margin-right: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .aphrodite-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .aphrodite-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .aphrodite-pic img {
+    flex: 1;
+    height: 265px;
+    width: 50%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-left: 160px;
+}
+
+nav#god-info .aphrodite-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(233, 160, 205, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .aphrodite-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .aphrodite-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Demeter's Card*/
+
+nav#god-info .demeter-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(195, 245, 137, 0.8), rgba(75, 143, 107, 0.8));
+    border-radius: 24px;
+    margin-left: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .demeter-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .demeter-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .demeter-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-right: 160px;
+}
+
+nav#god-info .demeter-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(182, 215, 131, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .demeter-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .demeter-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Hephaestus Card*/
+
+nav#god-info .hephaestus-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(234, 107, 57, 0.8), rgba(205, 38, 30, 0.8));
+    border-radius: 24px;
+    margin-right: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .hephaestus-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .hephaestus-card h2 {
+    margin-top: 0px;
+}
+
+nav#god-info .hephaestus-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .hephaestus-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-left: 160px;
+}
+
+nav#god-info .hephaestus-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgb(245, 77, 77);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hephaestus-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hephaestus-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Hermes Card*/
+
+nav#god-info .hermes-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    border-radius: 24px;
+    margin-left: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .hermes-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .hermes-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .hermes-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-right: 160px;
+}
+
+nav#god-info .hermes-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hermes-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hermes-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Ares's Card*/
+
+nav#god-info .ares-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    border-radius: 24px;
+    margin-right: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .ares-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .ares-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .ares-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-left: 160px;
+}
+
+nav#god-info .ares-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .ares-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .ares-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Apollo Card*/
+
+nav#god-info .apollo-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(242, 252, 140, 0.868), rgba(197, 191, 75, 0.8));
+    border-radius: 24px;
+    margin-left: 165px;
+    height: 150px;
+}
+
+nav#god-info .apollo-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .apollo-card h2 {
+    margin-top: 0px;
+}
+
+nav#god-info .apollo-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .apollo-pic img {
+    flex: 1;
+    height: 55%;
+    width: 50%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-right: -200px;
+}
+
+nav#god-info .apollo-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(230, 232, 175, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .apollo-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .apollo-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Artemis Card*/
+
+nav#god-info .artemis-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    border-radius: 24px;
+    margin-right: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .artemis-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .artemis-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .artemis-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-left: 160px;
+}
+
+nav#god-info .artemis-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .artemis-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .artemis-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Athena's Card*/
+
+nav#god-info .athena-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    border-radius: 24px;
+    margin-left: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .athena-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .athena-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .athena-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-right: 160px;
+}
+
+nav#god-info .athena-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .athena-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .athena-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Hestia Card*/
+
+nav#god-info .hestia-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    border-radius: 24px;
+    margin-right: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .hestia-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .hestia-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .hestia-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-left: 160px;
+}
+
+nav#god-info .hestia-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hestia-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hestia-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+/* Dionysus's Card*/
+
+nav#god-info .dionysus-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    border-radius: 24px;
+    margin-left: 165px;
+    width: 120px;
+    height: 150px;
+}
+
+nav#god-info .dionysus-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .dionysus-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .dionysus-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-right: 160px;
+}
+
+nav#god-info .dionysus-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .dionysus-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .dionysus-pic img:hover::before {
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+.non-olympians h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #802121;
+    margin-top: 2px;
+    text-align: center;
+}
+
+/* Hades Card*/
+
+nav#god-info .hades-card {
+    flex: 1;
+    padding: 50px;
+    transform: skew(-7deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(242, 252, 140, 0.868), rgba(197, 191, 75, 0.8));
+    border-radius: 24px;
+    margin-right: 165px;
+    height: 150px;
+}
+
+nav#god-info .hades-card h1 {
+    margin-top: 0;
+}
+
+nav#god-info .hades-card h2 {
+    margin-top: 0px;
+}
+
+nav#god-info .hades-card:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav#god-info .hades-pic img {
+    flex: 1;
+    height: 265px;
+    width: 55%;
+    position: relative;
+    border-radius: 24px;
+    overflow: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    margin-left: 160px;
+}
+
+nav#god-info .hades-pic img:hover {
+    transform: scale(1.08);
+    box-shadow: 10px 15px 20px 5px rgba(230, 232, 175, 0.959);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hades-pic img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(224, 163, 255, 0.1), rgba(255, 105, 180, 0.1));
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+ nav#god-info .hades-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 

@@ -99,10 +99,10 @@ nav#description h1 {
     margin-top: 150px;
     text-shadow: #914343;
     font-size: 100px;
-    background: linear-gradient(to right, #d2b557, #3fd0b8);
+    background: linear-gradient(to right, #1b1b3b, #480c2d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 4px 6px rgba(47, 83, 81, 0.733));
+    filter: drop-shadow(0px 0px 0px rgba(47, 83, 81, 0.733));
     display: inline-block;
 }
 
@@ -176,7 +176,7 @@ nav#button-grid nav.button1 {
 
 .button1:hover {
     transform: translateY(-8px) scale(1.07);
-    box-shadow: 3px 12px 30px rgba(247, 255, 17, 0.9);
+    box-shadow: 5px 12px 30px rgb(240, 243, 163);
 }
 
 .button1 span.siteinfo {
@@ -202,7 +202,7 @@ nav#button-grid nav.button1 {
 
 .button2:hover {
     transform: translateY(-8px) scale(1.07);
-    box-shadow: 3px 12px 30px rgba(255, 47, 47, 0.9);
+    box-shadow: 5px 12px 30px rgb(240, 243, 163);
 }
 
 .button2 span.siteinfo {
@@ -228,7 +228,7 @@ nav#button-grid nav.button1 {
 
 .button3:hover {
     transform: translateY(-8px) scale(1.07);
-    box-shadow: 3px 12px 30px #a844fae6;
+    box-shadow: 5px 12px 30px rgb(240, 243, 163);
 }
 
 .button3 span.siteinfo {
@@ -254,7 +254,7 @@ nav#button-grid nav.button1 {
 
 .button4:hover {
     transform: translateY(-8px) scale(1.07);
-    box-shadow: 3px 12px 30px #f361e6e6;
+    box-shadow: 5px 12px 30px rgb(240, 243, 163);
 }
 
 .button4 span.siteinfo {
@@ -280,7 +280,7 @@ nav#button-grid nav.button1 {
 
 .button5:hover {
     transform: translateY(-8px) scale(1.07);
-    box-shadow: 3px 12px 50px #eb6c28;
+    box-shadow: 5px 12px 30px rgb(240, 243, 163);
 }
 
 .button5 span.siteinfo {
@@ -306,7 +306,7 @@ nav#button-grid nav.button1 {
 
 .button6:hover {
     transform: translateY(-8px) scale(1.07);
-    box-shadow: 3px 12px 30px #42ff74f3;
+    box-shadow: 5px 12px 30px rgb(240, 243, 163);
 }
 
 .button6 span.siteinfo {
