@@ -138,9 +138,9 @@ nav#description p {
 nav#button-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 40px;
+    gap: 100px;
     margin: 60px auto 50px;
-    max-width: 700px;
+    max-width: 800px;
     opacity: 0;
     animation: slideUpStagger 1.2s ease 1.2s forwards;
 }
