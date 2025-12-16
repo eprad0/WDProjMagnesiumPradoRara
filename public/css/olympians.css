@@ -126,7 +126,7 @@ nav#description h2 {
     margin-top: 2px;
 }
 
-nav#god-info {
+nav.god-info {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -135,7 +135,7 @@ nav#god-info {
 }
 /* Zeus Card*/
 
-nav#god-info .zeus-card {
+nav.god-info .zeus-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -146,20 +146,20 @@ nav#god-info .zeus-card {
     height: 150px;
 }
 
-nav#god-info .zeus-card h1 {
+nav.god-info .zeus-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .zeus-card h2 {
+nav.god-info .zeus-card h2 {
     margin-top: 0px;
 }
 
-nav#god-info .zeus-card:hover {
+nav.god-info .zeus-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .zeus-pic img {
+nav.god-info .zeus-pic img {
     flex: 1;
     height: 55%;
     width: 50%;
@@ -173,13 +173,13 @@ nav#god-info .zeus-pic img {
     margin-right: -200px;
 }
 
-nav#god-info .zeus-pic img:hover {
+nav.god-info .zeus-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(230, 232, 175, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .zeus-pic img::before {
+ nav.god-info .zeus-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -192,13 +192,13 @@ nav#god-info .zeus-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .zeus-pic img:hover::before {
+ nav.god-info .zeus-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Hera Card*/
 
-nav#god-info .hera-card {
+nav.god-info .hera-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -210,16 +210,16 @@ nav#god-info .hera-card {
     height: 150px;
 }
 
-nav#god-info .hera-card h1 {
+nav.god-info .hera-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .hera-card:hover {
+nav.god-info .hera-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .hera-pic img {
+nav.god-info .hera-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -233,13 +233,13 @@ nav#god-info .hera-pic img {
     margin-left: 160px;
 }
 
-nav#god-info .hera-pic img:hover {
+nav.god-info .hera-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .hera-pic img::before {
+ nav.god-info .hera-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -252,13 +252,13 @@ nav#god-info .hera-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .hera-pic img:hover::before {
+ nav.god-info .hera-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Poseidon's Card*/
 
-nav#god-info .poseidon-card {
+nav.god-info .poseidon-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -270,16 +270,16 @@ nav#god-info .poseidon-card {
     height: 150px;
 }
 
-nav#god-info .poseidon-card h1 {
+nav.god-info .poseidon-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .poseidon-card:hover {
+nav.god-info .poseidon-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .poseidon-pic img {
+nav.god-info .poseidon-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -293,13 +293,13 @@ nav#god-info .poseidon-pic img {
     margin-right: 160px;
 }
 
-nav#god-info .poseidon-pic img:hover {
+nav.god-info .poseidon-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(72, 65, 122, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .poseidon-pic img::before {
+ nav.god-info .poseidon-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -312,13 +312,13 @@ nav#god-info .poseidon-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .poseidon-pic img:hover::before {
+ nav.god-info .poseidon-pic img:hover::before {
     background: linear-gradient(45deg, rgba(151, 125, 255, 0.598), rgba(255, 105, 180, 0.2));
 }
 
 /* Aphrodite Card*/
 
-nav#god-info .aphrodite-card {
+nav.god-info .aphrodite-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -330,16 +330,16 @@ nav#god-info .aphrodite-card {
     height: 150px;
 }
 
-nav#god-info .aphrodite-card h1 {
+nav.god-info .aphrodite-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .aphrodite-card:hover {
+nav.god-info .aphrodite-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .aphrodite-pic img {
+nav.god-info .aphrodite-pic img {
     flex: 1;
     height: 265px;
     width: 50%;
@@ -353,13 +353,13 @@ nav#god-info .aphrodite-pic img {
     margin-left: 160px;
 }
 
-nav#god-info .aphrodite-pic img:hover {
+nav.god-info .aphrodite-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(233, 160, 205, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .aphrodite-pic img::before {
+ nav.god-info .aphrodite-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -372,13 +372,13 @@ nav#god-info .aphrodite-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .aphrodite-pic img:hover::before {
+ nav.god-info .aphrodite-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Demeter's Card*/
 
-nav#god-info .demeter-card {
+nav.god-info .demeter-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -390,16 +390,16 @@ nav#god-info .demeter-card {
     height: 150px;
 }
 
-nav#god-info .demeter-card h1 {
+nav.god-info .demeter-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .demeter-card:hover {
+nav.god-info .demeter-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .demeter-pic img {
+nav.god-info .demeter-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -413,13 +413,13 @@ nav#god-info .demeter-pic img {
     margin-right: 160px;
 }
 
-nav#god-info .demeter-pic img:hover {
+nav.god-info .demeter-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(182, 215, 131, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .demeter-pic img::before {
+ nav.god-info .demeter-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -432,13 +432,13 @@ nav#god-info .demeter-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .demeter-pic img:hover::before {
+ nav.god-info .demeter-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Hephaestus Card*/
 
-nav#god-info .hephaestus-card {
+nav.god-info .hephaestus-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -450,20 +450,20 @@ nav#god-info .hephaestus-card {
     height: 150px;
 }
 
-nav#god-info .hephaestus-card h1 {
+nav.god-info .hephaestus-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .hephaestus-card h2 {
+nav.god-info .hephaestus-card h2 {
     margin-top: 0px;
 }
 
-nav#god-info .hephaestus-card:hover {
+nav.god-info .hephaestus-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .hephaestus-pic img {
+nav.god-info .hephaestus-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -477,13 +477,13 @@ nav#god-info .hephaestus-pic img {
     margin-left: 160px;
 }
 
-nav#god-info .hephaestus-pic img:hover {
+nav.god-info .hephaestus-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgb(131, 15, 15);
     transition: all 0.4s ease;
 }
 
- nav#god-info .hephaestus-pic img::before {
+ nav.god-info .hephaestus-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -496,13 +496,13 @@ nav#god-info .hephaestus-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .hephaestus-pic img:hover::before {
+ nav.god-info .hephaestus-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Hermes Card*/
 
-nav#god-info .hermes-card {
+nav.god-info .hermes-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -514,16 +514,16 @@ nav#god-info .hermes-card {
     height: 150px;
 }
 
-nav#god-info .hermes-card h1 {
+nav.god-info .hermes-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .hermes-card:hover {
+nav.god-info .hermes-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .hermes-pic img {
+nav.god-info .hermes-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -537,13 +537,13 @@ nav#god-info .hermes-pic img {
     margin-right: 160px;
 }
 
-nav#god-info .hermes-pic img:hover {
+nav.god-info .hermes-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(75, 72, 71, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .hermes-pic img::before {
+ nav.god-info .hermes-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -556,13 +556,13 @@ nav#god-info .hermes-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .hermes-pic img:hover::before {
+ nav.god-info .hermes-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Ares's Card*/
 
-nav#god-info .ares-card {
+nav.god-info .ares-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -574,16 +574,16 @@ nav#god-info .ares-card {
     height: 150px;
 }
 
-nav#god-info .ares-card h1 {
+nav.god-info .ares-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .ares-card:hover {
+nav.god-info .ares-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .ares-pic img {
+nav.god-info .ares-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -597,13 +597,13 @@ nav#god-info .ares-pic img {
     margin-left: 160px;
 }
 
-nav#god-info .ares-pic img:hover {
+nav.god-info .ares-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(247, 247, 84, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .ares-pic img::before {
+ nav.god-info .ares-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -616,13 +616,13 @@ nav#god-info .ares-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .ares-pic img:hover::before {
+ nav.god-info .ares-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Apollo Card*/
 
-nav#god-info .apollo-card {
+nav.god-info .apollo-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -634,20 +634,20 @@ nav#god-info .apollo-card {
     height: 150px;
 }
 
-nav#god-info .apollo-card h1 {
+nav.god-info .apollo-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .apollo-card h2 {
+nav.god-info .apollo-card h2 {
     margin-top: 0px;
 }
 
-nav#god-info .apollo-card:hover {
+nav.god-info .apollo-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .apollo-pic img {
+nav.god-info .apollo-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -661,13 +661,13 @@ nav#god-info .apollo-pic img {
     margin-right: 160px;
 }
 
-nav#god-info .apollo-pic img:hover {
+nav.god-info .apollo-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(245, 247, 196, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .apollo-pic img::before {
+ nav.god-info .apollo-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -680,13 +680,13 @@ nav#god-info .apollo-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .apollo-pic img:hover::before {
+ nav.god-info .apollo-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Artemis Card*/
 
-nav#god-info .artemis-card {
+nav.god-info .artemis-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -698,16 +698,16 @@ nav#god-info .artemis-card {
     height: 150px;
 }
 
-nav#god-info .artemis-card h1 {
+nav.god-info .artemis-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .artemis-card:hover {
+nav.god-info .artemis-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .artemis-pic img {
+nav.god-info .artemis-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -721,13 +721,13 @@ nav#god-info .artemis-pic img {
     margin-left: 160px;
 }
 
-nav#god-info .artemis-pic img:hover {
+nav.god-info .artemis-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(3, 22, 46, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .artemis-pic img::before {
+ nav.god-info .artemis-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -740,13 +740,13 @@ nav#god-info .artemis-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .artemis-pic img:hover::before {
+ nav.god-info .artemis-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Athena's Card*/
 
-nav#god-info .athena-card {
+nav.god-info .athena-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -758,16 +758,16 @@ nav#god-info .athena-card {
     height: 150px;
 }
 
-nav#god-info .athena-card h1 {
+nav.god-info .athena-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .athena-card:hover {
+nav.god-info .athena-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .athena-pic img {
+nav.god-info .athena-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -781,13 +781,13 @@ nav#god-info .athena-pic img {
     margin-right: 160px;
 }
 
-nav#god-info .athena-pic img:hover {
+nav.god-info .athena-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(112, 71, 131, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .athena-pic img::before {
+ nav.god-info .athena-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -800,13 +800,13 @@ nav#god-info .athena-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .athena-pic img:hover::before {
+ nav.god-info .athena-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Hestia Card*/
 
-nav#god-info .hestia-card {
+nav.god-info .hestia-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -818,16 +818,16 @@ nav#god-info .hestia-card {
     height: 150px;
 }
 
-nav#god-info .hestia-card h1 {
+nav.god-info .hestia-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .hestia-card:hover {
+nav.god-info .hestia-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .hestia-pic img {
+nav.god-info .hestia-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -841,13 +841,13 @@ nav#god-info .hestia-pic img {
     margin-left: 160px;
 }
 
-nav#god-info .hestia-pic img:hover {
+nav.god-info .hestia-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(231, 93, 51, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .hestia-pic img::before {
+ nav.god-info .hestia-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -860,13 +860,13 @@ nav#god-info .hestia-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .hestia-pic img:hover::before {
+ nav.god-info .hestia-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
 /* Dionysus's Card*/
 
-nav#god-info .dionysus-card {
+nav.god-info .dionysus-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -878,16 +878,16 @@ nav#god-info .dionysus-card {
     height: 150px;
 }
 
-nav#god-info .dionysus-card h1 {
+nav.god-info .dionysus-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .dionysus-card:hover {
+nav.god-info .dionysus-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .dionysus-pic img {
+nav.god-info .dionysus-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -901,13 +901,13 @@ nav#god-info .dionysus-pic img {
     margin-right: 160px;
 }
 
-nav#god-info .dionysus-pic img:hover {
+nav.god-info .dionysus-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(42, 101, 32, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .dionysus-pic img::before {
+ nav.god-info .dionysus-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -920,7 +920,7 @@ nav#god-info .dionysus-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .dionysus-pic img:hover::before {
+ nav.god-info .dionysus-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
@@ -934,7 +934,7 @@ nav#god-info .dionysus-pic img:hover {
 
 /* Hades Card*/
 
-nav#god-info .hades-card {
+nav.god-info .hades-card {
     flex: 1;
     padding: 50px;
     transform: skew(-7deg);
@@ -945,20 +945,20 @@ nav#god-info .hades-card {
     height: 150px;
 }
 
-nav#god-info .hades-card h1 {
+nav.god-info .hades-card h1 {
     margin-top: 0;
 }
 
-nav#god-info .hades-card h2 {
+nav.god-info .hades-card h2 {
     margin-top: 0px;
 }
 
-nav#god-info .hades-card:hover {
+nav.god-info .hades-card:hover {
     transform: skew(-5deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-nav#god-info .hades-pic img {
+nav.god-info .hades-pic img {
     flex: 1;
     height: 265px;
     width: 55%;
@@ -972,13 +972,13 @@ nav#god-info .hades-pic img {
     margin-left: 160px;
 }
 
-nav#god-info .hades-pic img:hover {
+nav.god-info .hades-pic img:hover {
     transform: scale(1.08);
     box-shadow: 10px 15px 20px 5px rgba(36, 36, 36, 0.959);
     transition: all 0.4s ease;
 }
 
- nav#god-info .hades-pic img::before {
+ nav.god-info .hades-pic img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -991,7 +991,7 @@ nav#god-info .hades-pic img:hover {
     transition: all 0.4s ease;
 }
 
- nav#god-info .hades-pic img:hover::before {
+ nav.god-info .hades-pic img:hover::before {
     background: linear-gradient(45deg, rgba(224, 163, 255, 0.2), rgba(255, 105, 180, 0.2));
 }
 
