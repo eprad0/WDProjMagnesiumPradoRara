@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pallas - Famous Heroes</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="../images/Pallas_Logo.png" type="image/png">
+    <title>Thrones of the Gods</title>
+    <link rel="stylesheet" href="../css/olympians.css">
+    <link rel="icon" href="/assets/wireframeimgs/Pallas_Logo.png" type="image/png">
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("topnav").style.top = "10px";
+        } else {
+            document.getElementById("topnav").style.top = "-135px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+
+    </script>
 </head>
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="w1_olympians.html">Olympians</a></li>
-            <li><a href="w2_heroes.html">Famous Heroes</a></li>
-            <li><a href="w3_map.html">Interactive Map</a></li>
-            <li><a href="w4_gallery.html">Gallery</a></li>
-            <li><a href="w5_rpg.html">Text RPG</a></li>
-            <li><a href="w6_sources.html">Sources</a></li>
-        </ul>
+    <nav class="color-background"></nav>
+    <nav id="topnav">
+        <a href="index.html"><img src="/assets/wireframeimgs/Pallas_Logo_LightGray.png" alt="Image of Pallas Logo" class="logo"></a>
+            <ul id="navigation">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../public/webpages/w1_olympians.html">Olympians</a></li>
+                <li><a href="../public/webpages/w2_heroes.html">Heroes/Monsters</a></li>
+                <li><a href="../public/webpages/w3_map.html">Map</a></li>
+                <li><a href="../public/webpages/w4_gallery.html">Gallery</a></li>
+                <li><a href="../public/webpages/w5_rpg.html">Start Game!</a></li>
+            </ul>
     </nav>
 
 </body>

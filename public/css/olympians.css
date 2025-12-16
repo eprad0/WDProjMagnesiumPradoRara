@@ -479,7 +479,7 @@ nav#god-info .hephaestus-pic img {
 
 nav#god-info .hephaestus-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgb(245, 77, 77);
+    box-shadow: 10px 15px 20px 5px rgb(131, 15, 15);
     transition: all 0.4s ease;
 }
 
@@ -507,7 +507,7 @@ nav#god-info .hermes-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    background: linear-gradient(135deg, rgba(105, 148, 201, 0.8), rgba(73, 75, 79, 0.8));
     border-radius: 24px;
     margin-left: 165px;
     width: 120px;
@@ -539,7 +539,7 @@ nav#god-info .hermes-pic img {
 
 nav#god-info .hermes-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(75, 72, 71, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -567,7 +567,7 @@ nav#god-info .ares-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    background: linear-gradient(135deg, rgba(240, 86, 80, 0.8), rgba(221, 210, 50, 0.8));
     border-radius: 24px;
     margin-right: 165px;
     width: 120px;
@@ -599,7 +599,7 @@ nav#god-info .ares-pic img {
 
 nav#god-info .ares-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(247, 247, 84, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -627,9 +627,10 @@ nav#god-info .apollo-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(242, 252, 140, 0.868), rgba(197, 191, 75, 0.8));
+    background: linear-gradient(135deg, rgba(246, 242, 200, 0.8), rgba(205, 185, 83, 0.8));
     border-radius: 24px;
     margin-left: 165px;
+    width: 120px;
     height: 150px;
 }
 
@@ -648,8 +649,8 @@ nav#god-info .apollo-card:hover {
 
 nav#god-info .apollo-pic img {
     flex: 1;
-    height: 55%;
-    width: 50%;
+    height: 265px;
+    width: 55%;
     position: relative;
     border-radius: 24px;
     overflow: none;
@@ -657,12 +658,12 @@ nav#god-info .apollo-pic img {
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.4s ease;
-    margin-right: -200px;
+    margin-right: 160px;
 }
 
 nav#god-info .apollo-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(230, 232, 175, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(245, 247, 196, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -690,7 +691,7 @@ nav#god-info .artemis-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    background: linear-gradient(135deg, rgba(23, 26, 27, 0.8), rgba(50, 130, 221, 0.8));
     border-radius: 24px;
     margin-right: 165px;
     width: 120px;
@@ -722,7 +723,7 @@ nav#god-info .artemis-pic img {
 
 nav#god-info .artemis-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(3, 22, 46, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -750,7 +751,7 @@ nav#god-info .athena-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    background: linear-gradient(135deg, rgba(219, 119, 202, 0.8), rgba(219, 215, 116, 0.8));
     border-radius: 24px;
     margin-left: 165px;
     width: 120px;
@@ -782,7 +783,7 @@ nav#god-info .athena-pic img {
 
 nav#god-info .athena-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(112, 71, 131, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -810,7 +811,7 @@ nav#god-info .hestia-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    background: linear-gradient(135deg, rgba(240, 179, 110, 0.8), rgba(175, 45, 45, 0.942));
     border-radius: 24px;
     margin-right: 165px;
     width: 120px;
@@ -842,7 +843,7 @@ nav#god-info .hestia-pic img {
 
 nav#god-info .hestia-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(231, 93, 51, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -870,7 +871,7 @@ nav#god-info .dionysus-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(217, 160, 255, 0.8), rgba(50, 130, 221, 0.8));
+    background: linear-gradient(135deg, rgba(35, 179, 71, 0.8), rgba(195, 50, 221, 0.8));
     border-radius: 24px;
     margin-left: 165px;
     width: 120px;
@@ -902,7 +903,7 @@ nav#god-info .dionysus-pic img {
 
 nav#god-info .dionysus-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(118, 87, 71, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(42, 101, 32, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -938,7 +939,7 @@ nav#god-info .hades-card {
     padding: 50px;
     transform: skew(-7deg);
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, rgba(242, 252, 140, 0.868), rgba(197, 191, 75, 0.8));
+    background: linear-gradient(135deg, rgba(45, 45, 44, 0.868), rgba(203, 203, 202, 0.8));
     border-radius: 24px;
     margin-right: 165px;
     height: 150px;
@@ -973,7 +974,7 @@ nav#god-info .hades-pic img {
 
 nav#god-info .hades-pic img:hover {
     transform: scale(1.08);
-    box-shadow: 10px 15px 20px 5px rgba(230, 232, 175, 0.959);
+    box-shadow: 10px 15px 20px 5px rgba(36, 36, 36, 0.959);
     transition: all 0.4s ease;
 }
 
@@ -1005,6 +1006,7 @@ footer {
     border-top: 1px solid rgba(201, 90, 22, 0.2);
     background: rgba(74, 24, 24, 0.5);
     backdrop-filter: blur(20px);
+    margin-right: 0px;
 }
 
 footer .footer-links {
