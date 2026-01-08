@@ -49,4 +49,4 @@
 #### God Profile: 
 #### ![profile_god](assets/wireframeimgs/godprofile.png)
 #### Hero Profile:
-#### ![profile_hero](assets/wireframeimgs/heroprofile.png))
+#### ![profile_hero](assets/wireframeimgs/heroprofile.png)
