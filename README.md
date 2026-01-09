@@ -39,9 +39,9 @@
 ******
 ## Third Quarter Updated Project Proposal
 ### DESCRIPTION: 
-### This update for our 2nd Quarter Website Project introduces a more interactive kind of webpage that lets the user fill in personal information related to personality and character-like traits. The user simply provides answers to specific questions regarding his/her personality. After answering, the user has the freedom to look at which Greek god/hero (one webpage for the similar god and one webpage for similar hero) is closest to him/her in terms of personality and traits. The user also has the freedom to choose whether to save the data of the quiz or not.
+### This update for our 2nd Quarter Website Project introduces a more interactive kind of webpage that lets the user fill in personal information related to personality and character-like traits. The first webpage gives prompts that the user answers on how much they agree or disagree. After answering, the user has the freedom to look at which Greek god/hero (one webpage for the similar god and one webpage for similar hero) is closest to him/her in terms of personality and traits. The user also has the freedom to choose whether to save the data of the quiz or not.
 
-### These new webpages allow the user to understand important figures of Greek mythology. It allows them to personally connect with the character associated to him/her, understanding the story and their importance in the mythical world of Greece. The webpages with the associated god or hero is saved even after closing the website. In case the user wants to save NEW data, the browser asks the user if he/she wants to delete the previously saved data first.
+### These new webpages allow the user to understand important figures of Greek mythology. It allows them to personally connect with the character associated to him/her, understanding the story and their importance in the mythical world of Greece. The webpages with the associated god or hero is saved even after closing the website. The webpage will involve an autosave system. However, if there is already data saved, the browsers asks the user if they are sure they want to delete their previously saved data before replacing it with the current data.
 ******
 ### WIREFRAMES: 
 #### Personality Quiz: 
@@ -49,4 +49,4 @@
 #### God Profile: 
 #### ![profile_god](assets/wireframeimgs/godprofile.png)
 #### Hero Profile:
-#### ![profile_hero](assets/wireframeimgs/heroprofile.png)
+#### ![profile_hero](assets/wireframeimgs/heroprofile.png)  
