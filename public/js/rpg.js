@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // start button
     startBtn.addEventListener("click", function () {
 
+        //trimming name and chekcing for one
+
         const name = nameInput.value.trim();
 
         if (name === "") {
@@ -67,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
         playerHPValue.textContent = playerHP;
         bossHPValue.textContent = bossHP;
 
+        //hiding start screen and entering battle
+
         startScreen.classList.add("hidden");
         choiceScreen.classList.remove("hidden");
 
@@ -76,33 +80,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ATTACK BUTTONS
     choiceButtons.forEach(function (btn) {
-        btn.addEventListener("click", function () {
+    btn.addEventListener("click", function () {
 
-            const damage = Math.floor(Math.random() * 100) + 1;
+        const choice = btn.dataset.choice;
 
-            if (sfxDamage) {
-                sfxDamage.currentTime = 0;
-                sfxDamage.play();
-            }
+        // risk system, the more powerful the move, the higher chance/risk it is to take higher damage from the boss
 
-            shake(bossSprite);
+        const moves = {
+            "1": { name: "Grab the Cyclops",  min: 15, max: 25, highChance: 0.10 },
+            "3": { name: "Swing at him",      min: 25, max: 40, highChance: 0.20 },
+            "4": { name: "Flurry of Kicks",   min: 35, max: 55, highChance: 0.35 },
+            "2": { name: "Devastating Smash", min: 60, max: 90, highChance: 0.55 }
+        };
 
-            bossHP = Math.max(0, bossHP - damage);
-            bossHPValue.textContent = bossHP;
+        const move = moves[choice];
 
-            storyText.textContent =
-                "The Cyclops is hit by the attack. It takes " + damage + " damage.";
-            
-            if (sfxDamage) {
-                sfxDamage.currentTime = 0;
-                sfxDamage.play();
-            }
+        //calculating amt of damage
 
-            if (bossHP === 0) {
-                storyText.textContent = "The Cyclops falls! You win the battle!";
-                choiceScreen.classList.add("hidden");
-            }
-        });
+        const damage = Math.floor(Math.random() * (move.max - move.min + 1)) + move.min;
+
+        //boss damage animation
+
+        if (sfxDamage) {
+            sfxDamage.currentTime = 0;
+            sfxDamage.play();
+        }
+
+        shake(bossSprite);
+
+        bossHP = Math.max(0, bossHP - damage);
+        bossHPValue.textContent = bossHP;
+
+        if (bossHP === 0) {
+            storyText.textContent = "The Cyclops falls! You win the battle!";
+            choiceScreen.classList.add("hidden");
+            return;
+        }
+
+        const randomization = Math.random();
+        let bossDamage;
+
+        //calculating boss recoil
+
+        if (randomization < move.highChance) {
+            bossDamage = Math.floor(Math.random() * (120 - 70 + 1)) + 70;
+        } else {
+            bossDamage = Math.floor(Math.random() * (30 - 10 + 1)) + 10;
+        }
+
+        playerHP = Math.max(0, playerHP - bossDamage);
+        playerHPValue.textContent = playerHP;
+
+        storyText.textContent =
+            move.name + " hits for " + damage + " damage. " +
+            "The Cyclops strikes back! You take " + bossDamage + " damage.";
+
+        if (playerHP === 0) {
+            storyText.textContent = "You died... Play again?";
+            choiceScreen.classList.add("hidden");
+        }
     });
+});
+
 
 });
