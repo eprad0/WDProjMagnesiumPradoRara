@@ -214,6 +214,18 @@ nav#button-grid nav.button1 {
     text-shadow: 1px 2px 15px rgba(236, 149, 203, 0.715);
 }
 
+#playerNameInput {
+  padding: 12px;
+  width: 100%;
+  max-width: 350px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #9c825d;
+  background: #fdf7ed;
+  margin-bottom: 15px;
+  font-family: Consolas, monospace;
+}
+
 .button3 {
     text-align: center;
     position: relative;
@@ -477,3 +489,5 @@ section#rpg-card:hover {
 .hidden {
     display: none;
 }
+
+

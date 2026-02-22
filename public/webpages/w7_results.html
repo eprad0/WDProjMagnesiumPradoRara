@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thrones of the Gods</title>
-    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/quizresults.css">
     <link rel="icon" href="../../assets/wireframeimgs/Pallas_Logo.png" type="image/png">
+    <script src="../js/results.js"></script>
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
@@ -17,7 +18,6 @@
         }
         prevScrollpos = currentScrollPos;
         }
-
     </script>
 </head>
 <body>
@@ -35,36 +35,42 @@
             </ul>
     </nav>
     <nav id="description">
-        <h1>Meet Some Artworks</h1>
-        <h4>Works Referencing Mythical Greece</h4>
-    </nav>
-    <nav id="button-grid">
-        <nav class="button1">
-            <span class="sitename"><img src="../../assets/galleryimgs/Norris-ParthenonMarbles-1.webp" style: height="140px"; width="90%"; border-radius: 5px></span>
-            <span class="siteinfo">Marble reliefs and statues depicting gods, heroes, and mythological scenes, created for the Parthenon in Athens.</span>
-        </nav>
-        <nav class="button2">
-            <span class="sitename"><img src="../../assets/galleryimgs/disco1-e1458384205236.jpg" style: height="60%"; width="100%"></span>
-            <span class="siteinfo">A sculpture showing an idealized athlete in motion, representing balance, harmony, and physical perfection admired in Greek culture.</span>
-        </nav>
-        <nav class="button3">
-            <span class="sitename"><img src="../../assets/galleryimgs/21c84073-e2a5-454c-9f41-2f67fa3b89da-660x1020.avif" style: height="50%"; width="100%"></span>
-            <span class="siteinfo">A marble statue of Aphrodite, goddess of love and beauty, celebrated for its elegance and idealized form.</span>
-        </nav>
-        <nav class="button6">
-            <span class="sitename"><img src="../../assets/galleryimgs/p09q045f.jpg" style: height="70%"; width="100%"></span>
-            <span class="siteinfo">A dramatic sculpture showing a Trojan priest and his sons attacked by sea serpents, illustrating suffering and divine punishment.</span>
-        </nav>
+        <h1>Personality Quiz</h1>
+        <p> Beauty in the Beach is still looking for more volunteers for our cleanup on Feb 28. Signups close on Feb 21. Volunteer now through: https://bit.ly/TMTPCleanup!
+For further inquiries, feel free to contact Angelo Mananghaya at b2026armananghaya@pshs.edu.ph.</p>
     </nav>
 
+    <main id="results-container">
+  <section id="results-card">
 
+    <div class="results-grid">
+      <div class="left">
+        <h1 class="title">YOU ARE <span id="godName"></span>!</h1>
+        <p class="desc" id="godDesc"></p>
+        <p id="scoreText"></p>
+      </div>
+
+      <div class="right">
+        <div class="img-box">
+          <img id="godImg" src="" alt="God image">
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <a class="back-btn" href="w7_quiz.html">GO BACK TO QUIZ</a>
+    </div>
+
+  </section>
+</main>
+    
+    
 </body>
 <footer>
     <div class="footer-links">
         <a href="https://github.com/eprad0/WDProjMagnesiumPradoRara.git" target="_blank">Github</a> 
         <a href="mailto:b2029jhgrara@pshs.edu.ph" target="_blank">Hsien's Email</a> 
         <a href="mailto:b2029ejbprado@pshs.edu.ph">Ed's Email</a> 
-        
     </div>
     <h1>A Thorough Review on Greek Mythology</h3>
     <p>© 2024 Jabez Rara & Eduardo Prado. All rights reserved.</p>
