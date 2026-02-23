@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thrones of the Gods</title>
-    <link rel="stylesheet" href="../css/quizresults.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" href="../../assets/wireframeimgs/Pallas_Logo.png" type="image/png">
-    <script src="../js/results.js"></script>
+    <script src="../js/login.js"></script>
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
@@ -34,28 +34,26 @@
                 <li><a href="w7_quiz.html">Greek God Quiz</a></li>
             </ul>
     </nav>
-    <nav id="description">
-        <h1>Personality Quiz</h1>
-        <p> Beauty in the Beach is still looking for more volunteers for our cleanup on Feb 28. Signups close on Feb 21. Volunteer now through: https://bit.ly/TMTPCleanup!
-For further inquiries, feel free to contact Angelo Mananghaya at b2026armananghaya@pshs.edu.ph.</p>
-    </nav>
 
     <main id="results-container">
   <section id="results-card">
 
-    <div class="results-grid">
-      <div class="left">
-        <h1 class="title">YOU ARE <span id="godName"></span>!</h1>
-        <p class="desc" id="godDesc"></p>
-        <p id="scoreText"></p>
-      </div>
-
-      <div class="right">
-        <div class="img-box">
-          <img id="godImg" src="" alt="God image">
+        <div class="results-grid">
+            <div class="login-card">
+                <h2>Login</h2>
+                <form id="login-form" action="#" method="post" class="login-form">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="form-actions">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                        <button type="submit" class="btn">Sign In</button>
+                    </div>
+                </form>
+                <p class="login-help">Don't have an account? <a href="#">Register</a></p>
+            </div>
         </div>
-      </div>
-    </div>
 
     <div class="bottom">
     <a class="back-btn" href="w7_quiz.html">GO BACK TO QUIZ</a>
