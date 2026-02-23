@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrones of the Gods</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="icon" href="../../assets/wireframeimgs/Pallas_Logo.png" type="image/png">
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("topnav").style.top = "10px";
+        } else {
+            document.getElementById("topnav").style.top = "-135px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+</head>
+<body>
+    <nav class="color-background"></nav>
+    <nav id="topnav">
+        <a href="../../index.html"><img src="../../assets/wireframeimgs/Pallas_Logo_LightGray.png" alt="Image of Pallas Logo" class="logo"></a>
+            <ul id="navigation">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="w1_olympians.html">Olympians</a></li>
+                <li><a href="w2_heroes.html">Heroes/Monsters</a></li>
+                <li><a href="w3_map.html">Map</a></li>
+                <li><a href="w4_gallery.html">Gallery</a></li>
+                <li><a href="w5_rpg.html">Start Game!</a></li>
+                <li><a href="w7_quiz.html">Greek God Quiz</a></li>
+            </ul>
+    </nav>
+    <nav id="description">
+        <h1>Personality Quiz</h1>
+        <p> Beauty in the Beach is still looking for more volunteers for our cleanup on Feb 28. Signups close on Feb 21. Volunteer now through: https://bit.ly/TMTPCleanup!
+For further inquiries, feel free to contact Angelo Mananghaya at b2026armananghaya@pshs.edu.ph.</p>
+    </nav>
+
+    <div id="item">
+
+  <form id="quiz">
+
+    <!-- Question 1 -->
+    <div class="question-row">
+      <div class="q-left">
+        <div class="q-title">Question 1</div>
+        <p class="q-text">
+          It's a rainy day and you're bored. What do you do?
+        </p>
+      </div>
+
+      <div class="q-mid">Choose<br>your<br>answer:</div>
+
+      <div class="q-right">
+        <label class="opt">
+          <input type="radio" name="q1" value="100">
+          <span>Exercising</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q1" value="200">
+          <span>Reading / solving problems</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q1" value="300">
+          <span>Call with friends</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q1" value="400">
+          <span>Something creative</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-row">
+      <div class="q-left">
+        <div class="q-title">Question 2</div>
+        <p class="q-text">Pick a weapon:</p>
+      </div>
+
+      <div class="q-mid">Choose<br>your<br>answer:</div>
+
+      <div class="q-right">
+        <label class="opt">
+          <input type="radio" name="q2" value="100">
+          <span>Sword & shield</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q2" value="200">
+          <span>Magic tome</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q2" value="300">
+          <span>Lightning bolt</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q2" value="400">
+          <span>Magic harp</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-row">
+      <div class="q-left">
+        <div class="q-title">Question 3</div>
+        <p class="q-text">Where would you stay in Pisay?</p>
+      </div>
+
+      <div class="q-mid">Choose<br>your<br>answer:</div>
+
+      <div class="q-right">
+        <label class="opt">
+          <input type="radio" name="q3" value="100">
+          <span>Field / Gazebos</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q3" value="200">
+          <span>Library</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q3" value="300">
+          <span>Chaotic classroom</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q3" value="400">
+          <span>Quiet stairwell</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-row">
+      <div class="q-left">
+        <div class="q-title">Question 4</div>
+        <p class="q-text">How do you respond to being teased?</p>
+      </div>
+
+      <div class="q-mid">Choose<br>your<br>answer:</div>
+
+      <div class="q-right">
+        <label class="opt">
+          <input type="radio" name="q4" value="100">
+          <span>Fight back</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q4" value="200">
+          <span>Sarcastic response</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q4" value="300">
+          <span>Walk it off</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q4" value="400">
+          <span>Joke about it</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-row">
+      <div class="q-left">
+        <div class="q-title">Question 5</div>
+        <p class="q-text">I am a...</p>
+      </div>
+
+      <div class="q-mid">Choose<br>your<br>answer:</div>
+
+      <div class="q-right">
+        <label class="opt">
+          <input type="radio" name="q5" value="100">
+          <span>Winner</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q5" value="200">
+          <span>Strategist</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q5" value="300">
+          <span>Not a masochist</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q5" value="400">
+          <span>Artist</span>
+        </label>
+      </div>
+    </div>
+
+    <button id="submitBtn" type="submit">Submit</button>
+
+  </form>
+
+  <p id="result"></p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("quiz");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const totalQuestions = 5;
+    let total = 0;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+      const selected = form.querySelector(`input[name="q${i}"]:checked`);
+
+      if (!selected) {
+        alert(`Please answer Question ${i}`);
+        return;
+      }
+
+      total += parseInt(selected.value, 10);
+    }
+    window.location.href = `results.html?score=${total}`;
+  });
+});
+</script>
+
+    
+</body>
+<footer>
+    <div class="footer-links">
+        <a href="https://github.com/eprad0/WDProjMagnesiumPradoRara.git" target="_blank">Github</a> 
+        <a href="mailto:b2029jhgrara@pshs.edu.ph" target="_blank">Hsien's Email</a> 
+        <a href="mailto:b2029ejbprado@pshs.edu.ph">Ed's Email</a> 
+    </div>
+    <h1>A Thorough Review on Greek Mythology</h3>
+    <p>© 2024 Jabez Rara & Eduardo Prado. All rights reserved.</p>
+    <p>Britannica Editors. (n.d.). Heracles | Myth, significance, labors, meaning, & facts. Encyclopaedia Britannica. Retrieved December 2025, from https://www.britannica.com/topic/Heracles </p>
+    <p>Britannica Editors. (n.d.). Odysseus | Myth, significance, Trojan War, & Odyssey. Encyclopaedia Britannica. Retrieved December 2025, from https://www.britannica.com/topic/Odysseus </p>
+    <p>Gill, N. S. (2025, May 12). What was the role of Perseus in Greek mythology? ThoughtCo. Retrieved from https://www.thoughtco.com/perseus-greek-hero-120217</p>
+    <p>Regula, D. (2025, April 15). The Twelve Olympian Gods and Goddesses of Greek Mythology. ThoughtCo. Retrieved December 2025, from https://www.thoughtco.com/greek-mythology-olympian-gods-and-goddesses-1524431</p>
+    <p>TomasSereda. (2023, March 16). Athens - Acropolis with parthenon at sunset, Greece. iStock. https://www.istockphoto.com/photo/athens-acropolis-with-parthenon-at-sunset-greece-gm1471834066-502341617</p>
+    <p>Templatemo. (n.d.). Free template 597 Neural glass. Templatemo. https://templatemo.com/tm-597-neural-glass</p>
+    <p>W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp</p>
+    <p>W3Schools.com. (n.d.-d). https://www.w3schools.com/jsref/met_document_addeventlistener.asp</p>
+    <p>YouTube. (n.d.). https://www.youtube.com/shorts/nGbFYuyAzZM</p>
+</footer>
+</html>
