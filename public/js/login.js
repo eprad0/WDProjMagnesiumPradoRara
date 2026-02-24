@@ -17,14 +17,32 @@ document.addEventListener('DOMContentLoaded', function(){
     const pass = document.getElementById('password').value;
     if(!name){ alert('Please enter your username or email.'); username.focus(); return; }
     if(!pass){ alert('Please enter your password.'); document.getElementById('password').focus(); return; }
-
-    // Remember preference (demo only - not secure authentication)
+    // Simple credential handling (demo only: stores plaintext in localStorage)
     try{
+      const credKey = 'userCredentials';
+      const raw = localStorage.getItem(credKey);
+      const creds = raw ? JSON.parse(raw) : {};
+
+      // If username exists, require same password
+      if(creds[name]){
+        if(creds[name] !== pass){
+          alert('Password does not match the existing account for this username.');
+          document.getElementById('password').focus();
+          return;
+        }
+        // password matches -> sign in
+      } else {
+        // new username -> register locally (demo)
+        creds[name] = pass;
+        localStorage.setItem(credKey, JSON.stringify(creds));
+      }
+
       if(remember.checked) localStorage.setItem('rememberedUser', name);
       else localStorage.removeItem('rememberedUser');
-    }catch(e){/* ignore */}
+      // mark current signed-in user (used by results history)
+      localStorage.setItem('currentUser', name);
+    }catch(e){console.warn('storage error', e)}
 
-    // TODO: replace with real authentication request
     alert('Signed in as ' + name + ' (demo)');
   });
 

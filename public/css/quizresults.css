@@ -317,3 +317,11 @@ footer p {
     color: #FFFFFF;
     font-size: 14px;
 }
+
+/* Modal for past results */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:center;justify-content:center;padding:20px}
+.modal .modal-content{background:#f6edc9;border:6px solid #7a5b3a;padding:18px;border-radius:8px;max-width:720px;width:100%;box-sizing:border-box;color:#111}
+.modal h3{margin-top:0;font-size:20px}
+.modal ul{list-style:none;padding:0;margin:12px 0;max-height:320px;overflow:auto}
+.modal ul li{padding:8px 10px;border-bottom:1px solid rgba(0,0,0,0.06);font-weight:700}
+.modal .back-btn{display:inline-block;margin-bottom:12px}
