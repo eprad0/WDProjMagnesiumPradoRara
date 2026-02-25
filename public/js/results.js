@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  //calculating the score
+
+  const trait1e = document.getElementById("trait1");
+  const trait2e = document.getElementById("trait2");
+  const trait3e = document.getElementById("trait3");
+  const trait4e = document.getElementById("trait4");
+
   let god = "";
   let desc = "";
   let img = "";
@@ -21,28 +28,57 @@ document.addEventListener("DOMContentLoaded", () => {
   if (score <= 700) {
     god = "Ares";
     desc = "Bold, competitive, and fearless.";
-    img = "../../assets/gods/ares.png";
+    img = "../../assets/godsimgs/ares.png";
+    t1 = 5;
+    t2 = 4;
+    t3 = 2;
+    t4 = 1;
   }
   else if (score <= 1000) {
     god = "Athena";
     desc = "Wise, strategic, and analytical.";
-    img = "../../assets/gods/athena.png";
+    img = "../../assets/godsimgs/athena.png";
+    t1 = 3;
+    t2 = 5;
+    t3 = 4;
+    t4 = 2;
   }
   else if (score <= 1300) {
     god = "Zeus";
     desc = "Confident, commanding, natural leader.";
-    img = "../../assets/gods/zeus.png";
+    img = "../../assets/godsimgs/zeus.png";
+    t1 = 4;
+    t2 = 4;
+    t3 = 5;
+    t4 = 2;
   }
   else {
     god = "Apollo";
     desc = "Creative, expressive, and imaginative.";
-    img = "../../assets/gods/apollo.png";
+    img = "../../assets/godsimgs/apollo.png";
+    t1 = 3;
+    t2 = 4;
+    t3 = 3;
+    t4 = 5;
   }
+
+  function stars(value) {
+  let result = "";
+  for (let i = 0; i < value; i++) {
+    result += "★";
+  }
+  return result;
+}
 
   godNameEl.textContent = god;
   godDescEl.textContent = desc;
   scoreTextEl.textContent = `Score: ${score}`;
   godImgEl.src = img;
+
+  trait1e.textContent = stars(t1);
+  trait2e.textContent = stars(t2);
+  trait3e.textContent = stars(t3);
+  trait4e.textContent = stars(t4);
 
   // Save this result to localStorage (history)
   try{
