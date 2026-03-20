@@ -38,6 +38,16 @@
 #### ![Sources](assets/wireframeimgs/Sources.png)
 ******
 ## FINAL MODIFICATION PROPOSAL
+### Update/Delete: 
+### DESCRIPTION: 
+### To complete the Update and Delete part of the CRUD Operation, we added gave the users the option to delete and change the score of their results. Changing the score of the results will update the corresponding god of the user. The user may also choose to delete his/her previous results. The "EDIT SCORE" button is placed at the bottom of the results tab to allow the user to scroll through all results first before deciding which to edit. After pressing, the user may willingly change the scores of results. The browser will ask if the user is sure with his/her changes after the user presses the button now labeled "STOP EDIT".
+
+### A delete button is placed next to each result, and if clicked, deletes the result from localStorage. A delete-by-filter option is also added to help the user delete all the results with a specific god, specific username, or specific god and username. If the user checks the checkbox corresponding to a specific category (god, username, or both), it will delete all results with those specifications from the localStorage. Leaving none checked deletes everything by default. However, the browser will also alert the user if he/she is sure with his/her choice before actually deleting the results from localStorage. This applies to both registered and unregistered accounts.
+#### ![UD](assets/wireframeimgs/ud.png)
+#### ![UD2](assets/wireframeimgs/ud2.png)
+#### ![UD3](assets/wireframeimgs/ud3.png)
+#### ![UD4](assets/wireframeimgs/ud4.png)
+
 ******
 ## Third Quarter Updated Project Proposal
 ### DESCRIPTION: 
