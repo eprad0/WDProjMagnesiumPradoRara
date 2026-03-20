@@ -4,7 +4,7 @@
 #### ![Pallas_Logo](assets/wireframeimgs/Pallas_Logo.png)
 ### DESCRIPTION: 
 ### Our webpage aims to rekindle the readers’ interests in the legends of Greek mythology. Our content involves backstories and interesting details about the Greeks and the gods that they believe in. Included in the website are maps and games that allow users to learn about the Greek civilization and their beliefs better. Our group believes that the culture of the ancient Greek civilization is still prominent even during the Contemporary period. 
-******f
+******
 ### WEBPAGE BREAKDOWN:
 ### Home Page: Menu that will show links that will lead to the other webpages.
 ### W1 (Olympians): This webpage will talk about the twelve Olympians of Greek mythology. The webpage will also include a brief description and history of each Olympian.
@@ -36,6 +36,8 @@
 #### ![Expanded_Game](assets/wireframeimgs/Game2.png)
 #### Sources: 
 #### ![Sources](assets/wireframeimgs/Sources.png)
+******
+## FINAL MODIFICATION PROPOSAL
 ******
 ## Third Quarter Updated Project Proposal
 ### DESCRIPTION: 
