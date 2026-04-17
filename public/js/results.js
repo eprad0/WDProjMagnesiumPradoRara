@@ -111,11 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
         listEl.innerHTML = '<li>No saved results.</li>';
         return;
       }
-      for(const it of arr){
+      for(let i = 0; i < arr.length; i++){
+        const it = arr[i];
         const d = new Date(it.date);
         const li = document.createElement('li');
         const who = it.user ? ` — ${it.user}` : '';
-        li.textContent = `${d.toLocaleString()} — ${it.god} (Score: ${it.score})${who}`;
+        li.innerHTML = `${d.toLocaleString()} — ${it.god} (Score: ${it.score})${who}
+        <button onclick="deleteResult(${i})">x</button>`;
         listEl.appendChild(li);
       }
     }catch(e){ listEl.innerHTML = '<li>Error reading history</li>'; }
@@ -127,6 +129,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if(closeBtn && modal){
     closeBtn.addEventListener('click', function(){ modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); });
   }
+
+  // delete results
+  window.deleteResult = function(index){
+  let arr = JSON.parse(localStorage.getItem('quizResults') || '[]');
+  arr.splice(index, 1);
+  localStorage.setItem('quizResults', JSON.stringify(arr));
+  renderHistory();
+}
 
   // explicit save button (saves shown result regardless of initial auto-save)
   function saveEntry(userOverride){
