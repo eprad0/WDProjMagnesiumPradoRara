@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const remember = form.querySelector('input[name="remember"]');
   const toggle = document.querySelector('.toggle-password');
   const passwordInput = document.getElementById('password');
+  const registerBtn = document.getElementById('register');
 
   // Prefill username if previously remembered
   try{
@@ -11,12 +12,16 @@ document.addEventListener('DOMContentLoaded', function(){
     if(saved){ username.value = saved; remember.checked = true; }
   }catch(e){/* ignore storage errors */}
 
+  function getCreds() {
+    return JSON.parse(localStorage.getItem('userCredentials') || '{}');
+  }
+
   form.addEventListener('submit', function(e){
     e.preventDefault();
     const name = username.value.trim();
-    const pass = document.getElementById('password').value;
+    const pass = passwordInput.value;
     if(!name){ alert('Please enter your username or email.'); username.focus(); return; }
-    if(!pass){ alert('Please enter your password.'); document.getElementById('password').focus(); return; }
+    if(!pass){ alert('Please enter your password.'); passwordInput.focus(); return; }
     // Simple credential handling (demo only: stores plaintext in localStorage)
     try{
       const credKey = 'userCredentials';
@@ -33,8 +38,9 @@ document.addEventListener('DOMContentLoaded', function(){
         // password matches -> sign in
       } else {
         // new username -> register locally (demo)
-        creds[name] = pass;
-        localStorage.setItem(credKey, JSON.stringify(creds));
+        alert('Account does not exist. Please register an account!');
+        username.focus();
+        return;
       }
 
       if(remember.checked) localStorage.setItem('rememberedUser', name);
@@ -44,7 +50,22 @@ document.addEventListener('DOMContentLoaded', function(){
     }catch(e){console.warn('storage error', e)}
 
     alert('Signed in as ' + name + ' (demo)');
+    window.location.href = 'w8_results.html';
   });
+
+  if (registerBtn) {
+        registerBtn.addEventListener('click', function () {
+          const name = username.value.trim();
+          const pass = passwordInput.value;
+          if (!name) return alert('Please enter a username.'), username.focus();
+          if (!pass) return alert('Please enter a password.'), passwordInput.focus();
+          const creds = getCreds();
+          if (creds[name]) return alert('Account already exists.'), username.focus();
+          creds[name] = pass;
+          localStorage.setItem('userCredentials', JSON.stringify(creds));
+          alert('Account created successfully. Please sign in now.');
+  });
+}
 
   // show/hide password toggle
   if(toggle && passwordInput){

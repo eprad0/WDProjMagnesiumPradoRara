@@ -6,7 +6,7 @@
     <title>Thrones of the Gods</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" href="../../assets/wireframeimgs/Pallas_Logo.png" type="image/png">
-    <script src="../js/login.js"></script>
+    <script src="../js/login.js" defer></script>
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
@@ -52,9 +52,10 @@
                     <div class="form-actions">
                         <label><input type="checkbox" name="remember"> Remember me</label>
                         <button type="submit" class="btn">Sign In</button>
+                        <button type="button" id="register" class="btn">Register</button>
                     </div>
                 </form>
-                <p class="login-help">Don't have an account? <a href="#">Register</a></p>
+                <p class="login-help">Don't have an account? Register one.</p>
             </div>
         </div>
 

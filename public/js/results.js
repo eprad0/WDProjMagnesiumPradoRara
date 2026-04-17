@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isNaN(score)) {
     godNameEl.textContent = "Unknown";
     godDescEl.textContent = "No score received.";
+    scoreTextEl.textContent = "";
+    godImgEl.removeAttribute("src");
+    godImgEl.style.display = "none";
     return;
   }
 
