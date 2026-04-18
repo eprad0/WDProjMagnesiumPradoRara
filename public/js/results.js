@@ -28,16 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let desc = "";
   let img = "";
 
-  if (score <= 700) {
+  if (score >= 900) {
     god = "Ares";
     desc = "Bold, competitive, and fearless.";
-    img = "../../assets/godsimgs/ares.png";
+    img = "../assets/godsimgs/ares.png";
     t1 = 5;
     t2 = 4;
     t3 = 2;
     t4 = 1;
   }
-  else if (score <= 1000) {
+  else if (score >= 2200) {
     god = "Athena";
     desc = "Wise, strategic, and analytical.";
     img = "../../assets/godsimgs/athena.png";
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     t3 = 4;
     t4 = 2;
   }
-  else if (score <= 1300) {
+  else if (score >= 3100) {
     god = "Zeus";
     desc = "Confident, commanding, natural leader.";
     img = "../../assets/godsimgs/zeus.png";
@@ -103,7 +103,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const listEl = document.getElementById('history-list');
   const saveBtn = document.getElementById('save-result');
 
-  function renderHistory(){
+  const filterModal = document.getElementById('filter-modal');
+  const editScoreBtn = document.getElementById('edit-score');
+  const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+  const filterUsernameInput = document.getElementById('filter-userName');
+  const filterCountP = document.getElementById('filter-count');
+  const confirmDeleteBtn = document.getElementById('confirm-delete-btn');
+  const resetFilterBtn = document.getElementById('reset-filter-btn');
+  const closeFilterBtn = document.getElementById('close-filter-btn');
+
+  let activeFilters = { gods: [], username: '' };
+
+  function getFilteredResults(){
+    const rawData = localStorage.getItem('quizResults');
+    const allResults = rawData ? JSON.parse(rawData) : [];
+
+    const filtered = allResults.filter(item => {
+      const matchesGod = activeFilters.gods.length === 0 || activeFilters.gods.includes(item.god);
+
+      const matchesUser = activeFilters.username === '' || item.user === activeFilters.username;
+
+      return matchesGod && matchesUser;
+
+    });
+  }
+
+    function updateFilterCount(){
+      const filtered = getFilteredResults();
+
+      const count = filtered.length;
+      
+      const filterCountP.textContent = `${count} results will be deleted.`;
+
+    };
+
+    function deleteFilteredResults(){
+
+    }
     listEl.innerHTML = '';
     try{
       const arr = JSON.parse(localStorage.getItem('quizResults') || '[]');
@@ -123,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }catch(e){ listEl.innerHTML = '<li>Error reading history</li>'; }
   }
 
-  if(showBtn && modal){
+  if (showBtn && modal){
     showBtn.addEventListener('click', function(){ renderHistory(); modal.style.display = 'block'; modal.setAttribute('aria-hidden','false'); });
   }
   if(closeBtn && modal){

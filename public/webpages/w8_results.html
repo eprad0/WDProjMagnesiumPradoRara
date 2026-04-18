@@ -93,11 +93,33 @@
       <div class="modal-content">
         <button id="close-history" class="back-btn" type="button">CLOSE</button>
         <h3>Past Quiz Results</h3>
+        <a id="edit-score" class="back-btn" type="button">Delete By Filter</a>
         <ul id="history-list"></ul>
-        <a id="edit-score" class="back-btn" type="button">EDIT SCORE</a>
+       
       </div>
     </div>
 
+    <div id="filter-modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <h3>Delete Results by Filter</h3>
+        <input type="checkbox" id="god1" name="zeus" class="filter-checkbox" value="Zeus">
+          <label for="god1">Zeus</label><br>
+        <input type="checkbox" id="god2" name="athena" class="filter-checkbox" value="Athena">
+          <label for="god2">Athena</label><br>
+        <input type="checkbox" id="god3" name="ares" class="filter-checkbox" value="Ares">
+          <label for="god3">Ares</label><br>
+        <input type="checkbox" id="god4" name="apollo" class="filter-checkbox" value="A3pollo">
+          <label for="god4">Apollo</label><br>
+
+        <input type="text" id="filter-userName" placeholder="Enter username.">
+
+        <p id="filter-count">0 results will be deleted.</p>
+
+        <button id="confirm-delete-btn" type="button">Confirm Delete</button>
+        <button id="reset-filter-btn" type="button">Reset All</button>
+        <button id="close-filter-btn" type="button">Cancel</button>
+      </div>
+    </div>
   </section>
 </main>
     

@@ -121,7 +121,7 @@
 
       <div class="q-right">
         <label class="opt">
-          <input type="radio" name="q3" value="100">
+          <input type="radio" name="q3" value="300">
           <span>Field / Gazebos</span>
         </label>
 
@@ -131,7 +131,7 @@
         </label>
 
         <label class="opt">
-          <input type="radio" name="q3" value="300">
+          <input type="radio" name="q3" value="100">
           <span>Chaotic classroom</span>
         </label>
 
@@ -158,12 +158,12 @@
         </label>
 
         <label class="opt">
-          <input type="radio" name="q4" value="200">
+          <input type="radio" name="q4" value="300">
           <span>Sarcastic response</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q4" value="300">
+          <input type="radio" name="q4" value="200">
           <span>Walk it off</span>
         </label>
 
@@ -217,24 +217,25 @@
 
       <div class="q-right">
         <label class="opt">
-          <input type="radio" name="q6" value="0">
-          <span>None</span>
+          <input type="radio" name="q6" value="100">
+          <span>Physical Education</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q6" value="0">
-          <span>Physics</span>
+          <input type="radio" name="q6" value="300">
+          <span>Social Sciences</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q6" value="0">
-          <span>Chemistry</span>
+          <input type="radio" name="q6" value="200">
+          <span>English</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q6" value="0">
-          <span>Biology</span>
+          <input type="radio" name="q6" value="400">
+          <span>Music and Health</span>
         </label>
+
       </div>
     </div>
 
@@ -242,31 +243,32 @@
     <div class="question-row">
       <div class="q-left">
         <div class="q-title">Question 7</div>
-        <p class="q-text">Do you like CS?</p>
+        <p class="q-text">What matters most?</p>
       </div>
 
       <div class="q-mid">Choose<br>your<br>answer:</div>
 
       <div class="q-right">
         <label class="opt">
-          <input type="radio" name="q7" value="0">
-          <span>I hate it</span>
+          <input type="radio" name="q7" value="300">
+          <span>Being in control.</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q7" value="0">
-          <span>It's ok</span>
+          <input type="radio" name="q7" value="400">
+          <span>Being the most talented.</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q7" value="0">
-          <span>I like it</span>
+          <input type="radio" name="q7" value="100">
+          <span>Being the strongest.</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q7" value="0">
-          <span>I love it</span>
+          <input type="radio" name="q7" value="200">
+          <span>Being the smartest.</span>
         </label>
+
       </div>
     </div>
 
@@ -281,23 +283,55 @@
 
       <div class="q-right">
         <label class="opt">
-          <input type="radio" name="q8" value="0">
+          <input type="radio" name="q8" value="100">
           <span> I'll wait for a perfect moment to settle the score</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q8" value="0">
+          <input type="radio" name="q8" value="200">
           <span>I address it immediately and loudly so it doesn't happen again</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q8" value="0">
+          <input type="radio" name="q8" value="400">
           <span> I try to understand their perspective and offer a second chance.</span>
         </label>
 
         <label class="opt">
-          <input type="radio" name="q8" value="0">
+          <input type="radio" name="q8" value="300">
           <span> I cut them out of my life and move on.</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Question 9-->
+     <div class="question-row">
+      <div class="q-left">
+        <div class="q-title">Question 9</div>
+        <p class="q-text">Which of these is your "Achilles' heel"?</p>
+      </div>
+
+      <div class="q-mid">Choose<br>your<br>answer:</div>
+
+      <div class="q-right">
+        <label class="opt">
+          <input type="radio" name="q9" value="300">
+          <span>Needing to always be the boss.</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q9" value="200">
+          <span>Overthinking every detail.</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q9" value="100">
+          <span>Losing temper quickly.</span>
+        </label>
+
+        <label class="opt">
+          <input type="radio" name="q9" value="400">
+          <span>Being a bit of a perfectionist.</span>
         </label>
       </div>
     </div>
@@ -318,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const totalQuestions = 5;
+    const totalQuestions = 9;
     let total = 0;
 
     for (let i = 1; i <= totalQuestions; i++) {
