@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  let attemptSaved = false;
+
   const params = new URLSearchParams(window.location.search);
   const score = parseInt(params.get("score"), 10);
 
@@ -68,19 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
   trait2e.textContent = stars(t2);
   trait3e.textContent = stars(t3);
   trait4e.textContent = stars(t4);
-
-  // Save this result to localStorage (history)
-  try{
-    const key = 'quizResults';
-    const currentUser = localStorage.getItem('currentUser') || null;
-    const entry = { date: new Date().toISOString(), god, score, user: currentUser };
-    const raw = localStorage.getItem(key);
-    const arr = raw ? JSON.parse(raw) : [];
-    arr.unshift(entry); // newest first
-    // keep at most 20 entries
-    if(arr.length > 20) arr.length = 20;
-    localStorage.setItem(key, JSON.stringify(arr));
-  }catch(e){console.warn('Could not save quiz result', e)}
 
   // History modal handling
   const showBtn = document.getElementById('show-history');
@@ -246,9 +235,20 @@ document.addEventListener("DOMContentLoaded", () => {
       arr.unshift(entry);
       if(arr.length > 20) arr.length = 20;
       localStorage.setItem(key, JSON.stringify(arr));
+
+      attemptSaved = true;
+
       alert('Result saved' + (user ? (' for ' + user) : ' (anonymous)'));
     }catch(e){ console.warn('Could not save quiz result', e); alert('Could not save result.'); }
   }
+
+  window.addEventListener('beforeunload', event => {
+    if (!attemptSaved) {
+      event.preventDefault();
+      event.returnValue = '';
+
+    }
+  });
 
   if(saveBtn){
     saveBtn.addEventListener('click', function(){ saveEntry(); });
