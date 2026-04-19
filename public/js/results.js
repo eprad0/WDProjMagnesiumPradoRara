@@ -120,6 +120,22 @@ document.addEventListener("DOMContentLoaded", () => {
         <button onclick="deleteResult(${i})">x</button>`;
         listEl.appendChild(li);
       }
+      let totals = {};
+      for (let i = 0; i < arr.length; i++) {
+        let user = arr[i].user;
+        if (!user) continue; 
+        if (!totals[user]) {
+           totals[user] = { sum: 0, count: 0 };
+           }
+      totals[user].sum += arr[i].score;
+      totals[user].count += 1;}
+// display it
+      for (let user in totals) {
+        let avg = Math.round(totals[user].sum / totals[user].count);
+        let li = document.createElement("li");
+        li.innerHTML = `${user} — Avg Score: ${avg}`;
+        listEl.appendChild(li);
+      }
     }catch(e){ listEl.innerHTML = '<li>Error reading history</li>'; }
   }
 
